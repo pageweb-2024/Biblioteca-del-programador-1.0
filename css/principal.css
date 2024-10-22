@@ -1,7 +1,83 @@
-body{
-    background-color: blue;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
 }
 
-header{
-    
+header {
+    background-color:blue;
+}
+
+img {
+    height: 100px;
+    width: 150px;
+    padding: 10px;
+    margin-right: 25px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+ul.menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+ul.menu-principal > li {
+    position: relative;
+    margin-left: 10px;
+    left: 800px;
+    margin: 20px;
+    padding: auto;
+}
+
+ul.menu-principal > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+    background-color: #130145;
+}
+
+/* Ocultar submenús por defecto */
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Alinea justo debajo del elemento padre */
+    left: 0;
+    background-color: #100366;
+    padding: 0;
+    list-style: none;
+    z-index: 1000;
+    min-width: 150px;
+}
+
+/* Estilos para los elementos del submenú */
+ul.submenu li {
+    margin: 0;
+}
+
+ul.submenu li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #130145;
+}
+
+ul.submenu li a:hover {
+    background-color: #130145;
+}
+
+/* Mostrar submenús cuando se pasa el ratón sobre el elemento principal */
+ul.menu-principal > li:hover > ul.submenu {
+    display: block;
+}
+
+/* Estilo para el menú principal en hover */
+ul.menu-principal > li > a:hover {
+    background-color: #130145;
 }
