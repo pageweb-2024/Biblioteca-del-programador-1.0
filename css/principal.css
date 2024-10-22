@@ -1,21 +1,24 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-color: #100366;
+    margin: 5px ;
 }
 
 header {
-    background-color:blue;
+    background-color:#100366;
 }
 
 img {
     height: 100px;
     width: 150px;
-    padding: 10px;
-    margin-right: 25px;
+    padding: 5px;
+    margin-right: 20px;
 }
 
-nav {
-    margin-top: 10px;
+nav{
+    margin-top: 5px;
+    display: flex;
 }
 
 ul.menu-principal {
@@ -29,8 +32,8 @@ ul.menu-principal {
 ul.menu-principal > li {
     position: relative;
     margin-left: 10px;
-    left: 800px;
-    margin: 20px;
+    left: 630px;
+    margin: 10px;
     padding: auto;
 }
 
@@ -46,12 +49,12 @@ ul.menu-principal > li > a {
 ul.submenu {
     display: none;
     position: absolute;
-    top: 100%; /* Alinea justo debajo del elemento padre */
+    top: 65%; /* Alinea justo debajo del elemento padre */
     left: 0;
     background-color: #100366;
     padding: 0;
     list-style: none;
-    z-index: 1000;
+    z-index: 800;
     min-width: 150px;
 }
 
@@ -63,6 +66,7 @@ ul.submenu li {
 ul.submenu li a {
     display: block;
     text-decoration: none;
+    text-align: center;
     color: white;
     padding: 10px;
     background-color: #130145;
@@ -80,4 +84,17 @@ ul.menu-principal > li:hover > ul.submenu {
 /* Estilo para el menú principal en hover */
 ul.menu-principal > li > a:hover {
     background-color: #130145;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid white; 
+    width: 100%; 
+
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin: 80px;
 }
