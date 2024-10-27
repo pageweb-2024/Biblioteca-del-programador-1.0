@@ -1,7 +1,6 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-color: #100366;
     margin: 5px ;
 }
 
@@ -90,10 +89,4 @@ hr{
     border: none;
     border-top: 2px solid white; 
     width: 100%; 
-}
-
-h1{
-    text-align: center;
-    color: white;
-    margin: 80px;
 }
