@@ -1,6 +1,7 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
+    background-color: rgb(78, 78, 78);
     margin: 5px ;
 }
 
@@ -89,4 +90,50 @@ hr{
     border: none;
     border-top: 2px solid white; 
     width: 100%; 
+}
+
+.acordeon{
+    max-width: 8000px;
+}
+
+.acordeon .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acordeon .contentBx .Label{
+    position: relative;
+    padding: 10px;
+    background: #313036;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.acordeon .contentBx .Label::before{
+    content: '>';
+    position: relative;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.acordeon .contentBx.active .Label::before{
+    content: '>';
+    transform: rotate(-45deg);
+}
+
+.acordeon .contentBx .content{
+    background: #52505a;   
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.acordeon .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
 }
