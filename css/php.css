@@ -1,19 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #625aa8;
+    background-color: #1f1d31;
     min-height: 100vh;
 }
 
 .header {
-    background-color: #625aa8;
+    background-color: #1f1d31;
     padding: 1rem;
-    box-shadow: 0 2px 5px #625aa8(245, 243, 243);
+    box-shadow: 0 2px 5px rgb(245, 243, 243);
 }
 
 .logo {
@@ -41,7 +35,7 @@ body {
 
 .nav-link {
     display: block;
-    padding: 25px;
+    padding: 1.2rem;
     background-color: #040425;
     color: white;
     font-size: 1.2rem;
@@ -53,7 +47,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #625aa8;
+    background-color: #06003C;
 }
 
 .dropdown {
@@ -62,7 +56,7 @@ body {
     left: 50%;
     transform: translateX(-54%);
     text-align: center;
-    background-color: #040425;
+    background-color: #06003C;
     width: 90%;
     display: none;
     box-shadow: 0 2px 10px rgb(5, 5, 5);
@@ -87,14 +81,14 @@ body {
 }
 
 /*logo del lenguaje*/
-.python-logo{
+.php-logo{
     padding: 12px;
     margin: 12px;
     text-align: center;
 }
 
-.image-python{
-    width: 170px;
+.image-php{
+    width: 200px;
     height: auto;
 }
 
@@ -108,7 +102,7 @@ h1{
 
 /*acordeon*/
 .acordeon{
-    width: 100%;
+    max-width: 8000px;
 }
 
 .acordeon .contentBx{
@@ -119,35 +113,29 @@ h1{
 .acordeon .contentBx .Label{
     position: relative;
     padding: 10px;
-    background: #cac828;
+    background: #4a60de;
     color: black;
     cursor: pointer;
     text-align: center;
     font-weight: bold;
 }
 
-.acordeon .contentBx .Label {
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
+.acordeon .contentBx .Label::before{
+    content: '>';
     position: relative;
-}
-
-.acordeon .contentBx .Label::before {
-    content: '▶'; 
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
     font-size: 1.5em;
-    position: relative; 
-    right: 30px; 
-    transition: transform 0.3s ease, content 0.3s ease;
 }
 
-.acordeon .contentBx.active .Label::before {
-    content: '▼'; 
-    transform: rotate(0deg); 
+.acordeon .contentBx.active .Label::before{
+    content: '>';
+    transform: rotate(-45deg);
 }
 
 .acordeon .contentBx .content{
-    background: #6e5bba;   
+    background: #258282;   
     height: 0;
     overflow: hidden;
     overflow-y: auto;
@@ -160,7 +148,7 @@ h1{
 }
 
 .acordeon .contentBx .content {
-    background: #6e5bba;
+    background: #4f8bb4;
     height: 0;
     overflow: hidden;
     transition: height 0.5s ease;
@@ -170,79 +158,4 @@ h1{
 .acordeon .contentBx.active .content {
     height: auto; 
     padding: 10px; 
-}
-
-/*dentro del acordeon*/
-h3{
-    text-align: center;
-    width: 100px;
-    height: auto;
-}
-strong{
-    font-size: 25px;
-    padding: 10px;
-    margin: auto;
-}
-.text-img {
-    display: flex;
-    align-items: center;
-    gap: 100px; /* Espacio entre el texto y la imagen */
-}
-
-.text-img p {
-    flex: 1;
-    font-size: 1.1em; 
-    color: black; 
-    line-height: 40px; 
-    font-weight: 40px; 
-    text-align: justify; 
-    margin: 0;
-}
-li{
-    flex: 1;
-    font-size: 1.1em; 
-    color: black; 
-    line-height: 1.6; 
-    font-weight: 500; 
-    text-align: justify; 
-    margin: 5px;
-    padding: 5px;
-}
-
-.text-img img {
-    width: 250px; 
-    height: 180px; 
-    border-radius: 8px; 
-    margin-left: 5px; 
-    border: 5px solid black; 
-}
-
-p{
-    text-align: center;
-    color: black;
-    margin: auto;
-    padding: 20px;
-    font-size: 1.1em;
-}
-
-/*boton de volver*/
-.button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-}
-
-.button {
-    background-color: yellow; 
-    color: black; 
-    padding: 10px; 
-    font-size: 1.5em; 
-    font-weight: bold;
-    border: none;
-    border-radius: 8px; 
-    cursor: pointer;
-    text-decoration: none; 
-    text-align: center;
-    transition: background-color 0.3s ease; 
 }
