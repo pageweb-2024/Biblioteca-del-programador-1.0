@@ -1,0 +1,139 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(78, 78, 78);
+    margin: 5px ;
+}
+
+header {
+    background-color:#100366;
+}
+
+img {
+    height: 100px;
+    width: 150px;
+    padding: 5px;
+    margin-right: 20px;
+}
+
+nav{
+    margin-top: 5px;
+    display: flex;
+}
+
+ul.menu-principal {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+ul.menu-principal > li {
+    position: relative;
+    margin-left: 10px;
+    left: 630px;
+    margin: 10px;
+    padding: auto;
+}
+
+ul.menu-principal > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+    display: block;
+    background-color: #130145;
+}
+
+/* Ocultar submenús por defecto */
+ul.submenu {
+    display: none;
+    position: absolute;
+    top: 65%; /* Alinea justo debajo del elemento padre */
+    left: 0;
+    background-color: #100366;
+    padding: 0;
+    list-style: none;
+    z-index: 800;
+    min-width: 150px;
+}
+
+/* Estilos para los elementos del submenú */
+ul.submenu li {
+    margin: 0;
+}
+
+ul.submenu li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: #130145;
+}
+
+ul.submenu li a:hover {
+    background-color: #130145;
+}
+
+/* Mostrar submenús cuando se pasa el ratón sobre el elemento principal */
+ul.menu-principal > li:hover > ul.submenu {
+    display: block;
+}
+
+/* Estilo para el menú principal en hover */
+ul.menu-principal > li > a:hover {
+    background-color: #130145;
+}
+
+hr{
+    border: none;
+    border-top: 2px solid white; 
+    width: 100%; 
+}
+
+.acordeon{
+    max-width: 8000px;
+}
+
+.acordeon .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acordeon .contentBx .Label{
+    position: relative;
+    padding: 10px;
+    background: #313036;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.acordeon .contentBx .Label::before{
+    content: '>';
+    position: relative;
+    top: 50%;
+    right: 20%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.acordeon .contentBx.active .Label::before{
+    content: '>';
+    transform: rotate(-45deg);
+}
+
+.acordeon .contentBx .content{
+    background: #52505a;   
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.acordeon .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}

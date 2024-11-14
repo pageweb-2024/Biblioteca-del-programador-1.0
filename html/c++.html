@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/c++.css" />
+    <title>C++</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="../index.html" class="logo"><img src="../images/Logo_3_Sin_Fondo.png" alt="" /></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Programación Web</a>
+                    <div class="dropdown">
+                        <a href="#history-web" class="dropdown-item">Historia</a>
+                        <a href="#html" class="dropdown-item">HTML</a>
+                        <a href="#css" class="dropdown-item">CSS</a>
+                        <a href="#python" class="dropdown-item">PYTHON</a>
+                        <a href="#php" class="dropdown-item">PHP</a>
+                        <a href="#js" class="dropdown-item">JS</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Videojuegos</a>
+                    <div class="dropdown">
+                        <a href="html/Seccion_3_Prog_Videojuegos.html" class="dropdown-item">Historia</a>
+                        <a href="#js-games" class="dropdown-item">JS</a>
+                        <a href="#cpp" class="dropdown-item">C++</a>
+                        <a href="#csharp" class="dropdown-item">C#</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Bases de Datos</a>
+                    <div class="dropdown">
+                        <a href="#history-db" class="dropdown-item">Historia</a>
+                        <a href="#sql" class="dropdown-item">SQL</a>
+                        <a href="#nosql" class="dropdown-item">NoSQL</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="python-logo">
+        <img class="image-python" src="/images/C++.png" alt="" />
+    </div>
+
+    <h1>C++</h1>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">HISTORIA DEL LENGUAJE</div>
+            <div class="content">
+                <ul>
+                    <strong>ORIGENES</strong>
+                    <div class="text-img">
+                        <p>
+                            C++ fue desarrollado por Bjarne Stroustrup en 1979 en los Laboratorios Bell como una extensión del lenguaje C.
+                             Stroustrup buscaba agregar características de programación orientada a objetos (POO) a C,
+                              lo que resultó en un lenguaje más flexible y potente.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/creador.jpg" alt="" />
+                    </div>
+                </ul>
+                <ul>
+                    <strong>PRIMERA VERSION</strong>
+                    <div class="text-img">
+                        <p>
+                            El primer compilador C++ apareció en 1985. Este lenguaje fue diseñado para ser un lenguaje multipropósito,
+                             eficiente y con un alto nivel de control sobre los recursos del sistema.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/data-5606639_1280.jpg" alt="" />
+                    </div>
+                </ul>
+
+                <h3><strong>EVOLUCION</strong></h3>
+                <p>A lo largo de los años, C++ ha pasado por varias actualizaciones significativas. Los estándares más importantes incluyen:</p>
+                <ul>
+                    <strong>C++98 (1998): </strong>
+                    <div class="text-img">
+                        <p>
+                            Primera gran estandarización del lenguaje.
+                        </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/historia/python 2.0.png" alt="" /> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>C++11 (2011):</strong>
+                    <div class="text-img">
+                        <p>
+                            Introdujo características modernas como lambdas, punteros inteligentes y el bucle for basado en rangos.
+                        </p>
+                        <!-- <img src="/recursos/Seccion_9_C++/Recursos/code-944499_1280.jpg" alt="" /> -->
+                    </div>
+                </ul>
+                
+                <ul>
+                    <strong>C++14, C++17 y C++20:</strong>
+                    <div class="text-img">
+                        <p>
+                            Añadieron mejoras de rendimiento, nuevas librerías estándar y características avanzadas como módulos y conceptos.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/code-944499_1280.jpg" alt="" />
+                     </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">PORQUE ES IMPORTANTE</div>
+            <div class="content">
+                
+                <ul>
+                    <strong>Rendimiento:</strong>
+                    <div class="text-img">
+                        <p>
+                            C++ es conocido por ser uno de los lenguajes más rápidos y eficientes debido a su cercanía al hardware y su capacidad para gestionar directamente la memoria.
+                             Esto es crucial en áreas donde el rendimiento es fundamental, como los videojuegos, sistemas operativos y aplicaciones embebidas. 
+                        </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/porque/versatibilidad.jfif" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Control de recursos:</strong>
+                    <div class="text-img">
+                        <p>
+                            A diferencia de lenguajes de alto nivel como Python, C++ permite un control detallado sobre cómo se gestionan los recursos del sistema,
+                             lo que es útil en entornos donde se requiere optimización extrema, como aplicaciones en tiempo real o simulaciones científicas. 
+                         </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/porque/Soporte multiplataforma.jfif" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Multiparadigma: </strong>
+                    <div class="text-img">
+                        <p>
+                            Soporta tanto la programación estructurada (como en C) como la programación orientada a objetos (POO). Además, permite la programación genérica mediante plantillas,
+                             lo que lo convierte en un lenguaje muy flexible para una amplia gama de aplicaciones. interacción del jugador con el entorno.
+                        </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/porque/Potencial educativo.jfif" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Extensa base de código:</strong>
+                    <div class="text-img">
+                        <p>
+                            Muchas infraestructuras críticas, videojuegos AAA, motores gráficos (como Unreal Engine), navegadores web,
+                             y aplicaciones financieras están escritas o dependen de C++.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/program-6944163_1280.jpg" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">CONCEPTOS BASICOS DEL LENGUAJE</div>
+            <div class="content">
+                <ul>
+                    <strong>Variables y tipos de datos:</strong>
+                    <div class="text-img">
+                        <p>
+                            Como en la mayoría de los lenguajes, C++ trabaja con tipos de datos básicos como int, float, char, double, entre otros.
+                        </p>
+                        <!-- <img src="/recursos/Seccion_9_C++/Recursos/VARIABLES Y TIPOS DE DATOS.png" alt=""> -->
+                    </div>
+                    <strong>Punteros y referencias:</strong>
+                    <div class="text-img">
+                        <p>
+                            Una característica fundamental de C++ es el uso de punteros, que permiten acceder directamente a la memoria.
+                             Esto es poderoso, pero también puede ser propenso a errores si no se maneja con cuidado.
+                        </p>
+                        <!-- <img src="/recursos/Seccion_9_C++/Recursos/PUNTEROS.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Clases y objetos:</strong>
+                    <div class="text-img">
+                        <p>
+                            En C++, las clases son fundamentales para la programación orientada a objetos.
+                             Las clases definen las propiedades y el comportamiento de los objetos, que son instancias de clases.
+                              Los conceptos de herencia, polimorfismo y encapsulación son claves en la POO de C++. 
+                        </p>
+                                    <!-- <img src="/recursos/Seccion_9_C++/Recursos/CLASES Y OBJETOS'.png"
+                                        alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Sobrecarga de funciones y operadores:</strong>
+                    <div class="text-img">
+                        <p>
+                            C++ permite sobrecargar funciones (definir varias funciones con el mismo nombre,
+                             pero diferentes parámetros) y operadores, lo que facilita el trabajo con tipos de datos personalizados.
+                        </p>
+                        <!-- <img src="/recursos/Seccion_9_C++/Recursos/FUNCIONES.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Plantillas (Templates):</strong>
+                    <div class="text-img">
+                        <p>
+                            C++ soporta programación genérica, lo que permite escribir funciones y clases que funcionan con cualquier tipo de dato,
+                             aumentando la reutilización del código.
+                             </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/imagenes codigo Python/bucle for.JPG" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Manejo de memoria dinámica:</strong>
+                    <div class="text-img">
+                        <p>
+                            A través de new y delete, C++ permite asignar y liberar memoria durante la ejecución del programa,
+                             dándole un control preciso sobre el uso de los recursos.
+                        </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/imagenes codigo Python/bucle while.JPG" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Excepciones:</strong>
+                    <div class="text-img">
+                        <p>
+                            C++ tiene un sistema de manejo de errores mediante excepciones (try, throw, catch), lo que ayuda a hacer el código más robusto. 
+                        </p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/imagenes codigo Python/Estructuras de control de flujo de control de excepciones.JPG"
+                            alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Sintaxis básica </strong>
+                    <div class="text-img">
+                        <li>Comentarios: Se pueden hacer comentarios en una línea usando // o en varias líneas usando /* ... */</li>
+                        <img src="/recursos/Seccion_9_C++/Recursos/SINTASIS BASICA.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Main Function </strong>
+                    <div class="text-img">
+                        <li>El punto de entrada de un programa C++ es la función main</li>
+                        <img src="/recursos/Seccion_9_C++/Recursos/MAIN FUNCION.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Variables y Tipos de Datos </strong>
+                    <div class="text-img">
+                        <p>C++ es un lenguaje fuertemente tipado, lo que significa que cada variable debe tener un tipo definido.</p>
+                        <p>Tipos de datos básicos:</p>
+                        <li>int: Números enteros.</li>
+                        <li>float: Números en coma flotante de precisión simple.</li>
+                        <li>double: Números en coma flotante de doble precisión.</li>
+                        <li>char: Un carácter.</li>
+                        <li>bool: Booleano (verdadero o falso).</li>
+                        <img src="/recursos/Seccion_9_C++/Recursos/VARIABLES Y TIPOS DE DATOS.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Operadores </strong>
+                    <div class="text-img">
+                        <li>Aritméticos: +, -, *, /, % (módulo).</li>
+                        <li>Relacionales: ==, !=, <, >, <=, >=.</li>
+                        <li>Lógicos: && (AND), || (OR), ! (NOT).</li>
+                        <li>Asignación: =, +=, -=, *=, /=, %=.</li>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/imagenes codigo Python/funcion.JPG" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Control de flujo </strong>
+                    <div class="text-img">
+                        <p>Condicionales: Se usan para tomar decisiones.</p>
+                        <p>Bucles: Se utilizan para repetir un bloque de código varias veces.</p>
+                        <li>for: Bucle con un contador. </li>
+                        <li>while: Bucle que se repite mientras la condición es verdadera</li>
+                        <li>do-while: Similar a while, pero se ejecuta al menos una vez.</li>
+                        <img src="/recursos/Seccion_9_C++/Recursos/CONTROL DE FLUJO CONDICCIONALES.png" alt="">
+                        <img src="/recursos/Seccion_9_C++/Recursos/FOR.png" alt="">
+                        <img src="/recursos/Seccion_9_C++/Recursos/WHILE.png" alt="">
+                        <img src="/recursos/Seccion_9_C++/Recursos/DO.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Funciones</strong>
+                    <div class="text-img">
+                        <p>
+                            Las funciones en C++ permiten reutilizar código y mejorar la organización. 
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/FUNCIONES.png"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Punteros </strong>
+                    <div class="text-img">
+                        <p>
+                            Un puntero es una variable que almacena la dirección de memoria de otra variable.
+                        </p>
+                        <p>
+                            Los punteros se usan ampliamente en C++ para manipular la memoria directamente.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/PUNTEROS.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Clases y Objetos (Programación Orientada a Objetos)</strong>
+                    <div class="text-img">
+                        <p>
+                            C++ es un lenguaje orientado a objetos. Las clases definen tipos de datos abstractos y los objetos son instancias de esas clases. 
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/CLASES Y OBJETOS'.png"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>E/S (Entrada y Salida)</strong>
+                    <div class="text-img">
+                        <p>
+                            Entrada: Se usa cin para leer valores.
+                        </p>
+                        <p>
+                            Salida: Se usa cout para imprimir valores.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/ENTRADA.png" alt="">
+                        <img src="/recursos/Seccion_9_C++/Recursos/SALIDA.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Espacios de nombres (Namespaces)</strong>
+                    <div class="text-img">
+                        <p>
+                            En C++ se utilizan espacios de nombres para evitar colisiones de nombres. 
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/ESPACIOS DE NOMBRES.png"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Herencia y Polimorfismo </strong>
+                    <div class="text-img">
+                        <p>La herencia permite que una clase hija herede propiedades y comportamientos de una clase padre.</p>
+                        <p>El polimorfismo permite tratar objetos de diferentes clases derivadas de manera uniforme usando punteros o referencias de la clase base.</p>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/imagenes codigo Python/funcion.JPG" alt=""> -->
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">HERRAMIENTAS CON LAS QUE SE USA</div>
+            <div class="content">
+                <ul>
+                    <strong>Compiladores:</strong>
+                    <div class="text-img">
+                        <li>GCC (GNU Compiler Collection): Compilador multiplataforma muy popular en entornos Unix y Linux.</li>
+                        <li>MSVC (Microsoft Visual C++): Compilador de C++ de Microsoft, ampliamente utilizado en Windows.</li>
+                        <li>Clang: Un compilador modular y rápido, utilizado en macOS y también disponible en otras plataformas.</li>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/herramientas/PyCharm.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>IDE (Entornos de desarrollo integrados):</strong>
+                    <div class="text-img">
+                        <li>Visual Studio: Uno de los IDEs más utilizados para C++ en Windows, con una gran cantidad de herramientas de depuración y análisis.</li>
+                        <li>CLion: Un IDE moderno multiplataforma creado por JetBrains, muy apreciado por su compatibilidad con CMake y su soporte para C++.</li>
+                        <li>Code: Blocks: Un IDE ligero y fácil de usar para proyectos más pequeños o educativos.</li>
+                        <img src="/recursos/Seccion_9_C++/Recursos/visual-studio.svg" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Depuradores:</strong>
+                    <div class="text-img">
+                        <li>GDB: El depurador estándar en sistemas basados en Linux.</li>
+                        <li>LLDB: Un depurador rápido que forma parte del proyecto LLVM, usado principalmente con Clang.</li>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/herramientas/Spyder.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Sistemas de construcción:</strong>
+                    <div class="text-img">
+                        <li>CMake: Una herramienta multiplataforma que facilita la configuración y gestión de proyectos C++ grandes y complejos</li>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/herramientas/Jupyter Notebook.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Conocimientos previos recomendados</strong>
+                    <div class="text-img">
+                        <li>
+                            Lógica de programación: Como C++ es un lenguaje de nivel intermedio/alto,
+                             tener una base sólida en conceptos de lógica de programación es fundamental. Esto incluye control de flujo (condicionales, bucles),
+                              estructuras de datos (arrays, listas, pilas), y algoritmos básicos.
+                        </li>
+                        <li>
+                            Conocimiento de C: Aunque no es obligatorio, C++ tiene muchas similitudes con C.
+                             Familiarizarse con C puede ayudarte a entender la evolución del lenguaje y a trabajar más cómodamente con C++.
+                        </li>
+                        <li>
+                            Sistemas y memoria: C++ es conocido por su control sobre el hardware y la memoria.
+                             Entender cómo funciona la gestión de memoria (asignación dinámica, punteros) será esencial para sacar provecho de sus capacidades.
+                        </li>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/herramientas/Jupyter Notebook.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Conceptos avanzados de C++ para explorar después</strong>
+                    <div class="text-img">
+                        <li>
+                            Punteros y memoria dinámica: Uno de los conceptos más poderosos y desafiantes de C++ son los punteros y la gestión de memoria dinámica (con new y delete).
+                             Aprender a manejarlos correctamente es crucial para evitar errores como los memory leaks.
+                        </li>
+                        <li>
+                            Programación orientada a objetos (POO): C++ es conocido por soportar la POO. Aprender a trabajar con clases,
+                             herencia, polimorfismo y encapsulamiento es clave para estructurar bien el código y reutilizar componentes.
+                        </li>
+                        <li>
+                            Templates y programación genérica: C++ ofrece templates, que te permiten escribir código que funcione con cualquier tipo de dato.
+                             Este concepto es muy útil para crear estructuras de datos y algoritmos genéricos que pueden trabajar con diferentes tipos sin duplicar el código.
+                        </li>
+                        <li>
+                            STL (Standard Template Library): C++ incluye la poderosa STL, que es una colección de estructuras de datos y algoritmos predefinidos como vectores,
+                             listas, colas, y más. Entender cómo usarla te ahorrará tiempo y esfuerzo.
+                        </li>
+                        <!-- <img src="../recursos/Seccion_11_Python/Recursos/herramientas/Jupyter Notebook.png" alt=""> -->
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Frameworks y herramientas para aprender C++</strong>
+                    <div class="text-img">
+                        <p>IDE y compiladores:</p>
+                        <li>Visual Studio: Un IDE robusto que soporta bien C++ y facilita la depuración de código.</li>
+                        <li>Code::Blocks: Un IDE ligero que es popular para el desarrollo en C++.</li>
+                        <li>CLion: Un IDE avanzado de JetBrains para C++, con herramientas de análisis de código.</li>
+                        <li>GCC (GNU Compiler Collection): Uno de los compiladores más utilizados para C++.</li>
+                        <p>CMake: Una herramienta de automatización de compilaciones que es muy útil para proyectos C++ grandes y complejos.
+                             Facilita la generación de archivos de construcción en diferentes entornos.
+                        </p>
+                        <p>
+                            Depuradores: Aprender a utilizar herramientas de depuración como gdb (GNU Debugger) será esencial para identificar errores y mejorar tu código.
+                        </p>
+                        <img src="/recursos/Seccion_9_C++/Recursos/visual-studio.svg" alt="">
+                        <img src="/recursos/Seccion_9_C++/Recursos/software-development-6523979_1280.jpg" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">
+                LENGUAJES Y TECNOLOGIAS QUE COMPLEMENTAN EL LENGUAJE
+            </div>
+            <div class="content">
+                <ul>
+                    <div class="text-img">
+                        <li>C: Dado que C++ es una extensión de C, ambos lenguajes son completamente interoperables. El código C puede integrarse fácilmente dentro de proyectos C++.</li>
+                        <li>
+                            Python: Aunque no está tan cerca del hardware como C++, Python a menudo se usa junto con C++ para desarrollar herramientas de scripting y automatización,
+                             especialmente en videojuegos y aplicaciones científicas. Las bibliotecas como Boost.Python permiten la integración de ambos lenguajes.
+                        </li>
+                        <li>
+                            OpenGL/Vulkan: Para la programación gráfica, C++ a menudo se utiliza con APIs como OpenGL o Vulkan para la creación de gráficos 2D/3D,
+                             comúnmente en videojuegos o simulaciones.
+                        </li>
+                        <li>
+                            Assembly: Para tareas de optimización extrema, especialmente en sistemas embebidos o desarrollo de drivers,
+                             tener conocimientos básicos de Assembly puede complementar tu uso de C++.
+                        </li>
+                        <li>
+                            OpenGL o DirectX: Si estás interesado en el desarrollo de gráficos y videojuegos,
+                             C++ se usa junto con librerías como OpenGL o DirectX para la creación de gráficos 2D/3D.
+                        </li>
+                        <li>
+                            Bases de datos: Aunque C++ no tiene una conexión directa con bases de datos como lenguajes web,
+                             puedes interactuar con bases de datos usando bibliotecas como SQLite, MySQL, o PostgreSQL.
+                        </li>
+                        <li>Librerías de terceros:
+                            <ul>
+                                <li>Boost: Una colección de librerías que extienden las capacidades estándar de C++, ofreciendo herramientas para trabajar con datos,
+                                     expresiones regulares, punteros inteligentes, etc.
+                                </li>
+                                <li>
+                                    Qt: Un framework multiplataforma utilizado para desarrollar aplicaciones gráficas.
+                                     Es muy popular en el desarrollo de interfaces gráficas de usuario (GUI) con C++.
+                                </li>
+                                <li>
+                                    Unreal Engine: Un motor de videojuegos ampliamente utilizado que está basado en C++.
+                                </li>
+                            </ul>
+                        </li>
+                        <img src="/recursos/Seccion_9_C++/Recursos/c.svg" alt="">
+                        <img src="/images/PYTHON.png" alt="">
+                        <img src="/recursos/Seccion_9_C++/Recursos/qt.svg" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Proyectos y práctica:</strong>
+                    <div class="text-img">
+                        <p>
+                            La práctica es fundamental para aprender C++. Aquí algunas ideas de proyectos que te ayudarán a mejorar:
+                        </p>
+                        <li>
+                            Estructuras de datos: Implementa tus propias versiones de estructuras como listas enlazadas, árboles, pilas,
+                             y colas para entender mejor el uso de punteros y memoria.
+                        </li>
+                        <li>
+                            Sistemas embebidos: Si te interesa el desarrollo de software cercano al hardware, C++ es ideal para trabajar en dispositivos embebidos (Arduino, Raspberry Pi).
+                        </li>
+                        <li>
+                            Juegos: Usa un motor de juegos como Unreal Engine para crear tus propios juegos en 3D o 2D.
+                             También puedes desarrollar un juego simple en consola para entender la lógica básica de un juego.
+                        </li>>
+                        <img src="/recursos/Seccion_9_C++/Recursos/video-game-6578105_1280.jpg" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">RESUMEN</div>
+            <div class="content">
+                <ul>
+                    <p>
+                        C++ es uno de los lenguajes más potentes y eficientes, utilizado en una amplia gama de aplicaciones que van desde videojuegos hasta sistemas operativos y software embebido.
+                         Su historia está profundamente vinculada a C, con el objetivo de proporcionar un lenguaje que combine eficiencia y control sobre el hardware con características avanzadas de la programación orientada a objetos.
+                          Aunque tiene una curva de aprendizaje empinada debido a su complejidad, su capacidad para manejar recursos de manera eficiente lo hace ideal para aplicaciones donde el rendimiento es crucial.
+                           Complementado con otras tecnologías como C, Python, OpenGL, y librerías como Boost, C++ sigue siendo uno de los lenguajes más relevantes en la programación moderna. 
+                           Para aprender C++, necesitarás practicar conceptos avanzados como la gestión de memoria y la programación orientada a objetos, usar herramientas como compiladores y depuradores, y complementar tu conocimiento con tecnologías y bibliotecas que te permitan desarrollar proyectos más grandes y complejos. 
+                    </p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <a href="../index.html" class="button">VOLVER</a>
+    </div>
+
+    <script src="../java/python.js"></script>
+</body>
+
+</html>
