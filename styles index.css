@@ -13,7 +13,7 @@ body {
 .header {
     background-color: #06003C;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgb(245, 243, 243);
+    box-shadow: 0 2px 5px #06003C(245, 243, 243);
 }
 
 .logo {
