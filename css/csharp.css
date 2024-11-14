@@ -6,14 +6,14 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #164fbb;
+    background-color: #5c54a9;
     min-height: 100vh;
 }
 
 .header {
-    background-color: #164fbb;
+    background-color: #5c54a9;
     padding: 1rem;
-    box-shadow: 0 2px 5px #164fbb(245, 243, 243);
+    box-shadow: 0 2px 5px #5c54a9(245, 243, 243);
 }
 
 .logo {
@@ -119,7 +119,7 @@ h1{
 .acordeon .contentBx .Label{
     position: relative;
     padding: 10px;
-    background: #123e90;
+    background: #41388e;
     color: black;
     cursor: pointer;
     text-align: center;
@@ -147,7 +147,7 @@ h1{
 }
 
 .acordeon .contentBx .content{
-    background: #3676ed;   
+    background: #8f78ed;   
     height: 0;
     overflow: hidden;
     overflow-y: auto;
@@ -160,7 +160,7 @@ h1{
 }
 
 .acordeon .contentBx .content {
-    background: #3676ed;
+    background: #8f78ed;
     height: 0;
     overflow: hidden;
     transition: height 0.5s ease;
@@ -234,7 +234,7 @@ p{
 }
 
 .button {
-    background-color: #123e90; 
+    background-color: #41388e; 
     color: black; 
     padding: 10px; 
     font-size: 1.5em; 
