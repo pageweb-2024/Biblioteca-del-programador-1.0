@@ -41,7 +41,8 @@ body {
 
 .nav-link {
     display: block;
-    padding: 25px;
+    text-align: center;
+    padding: 15px;
     background-color: #040425;
     color: white;
     font-size: 1.2rem;
@@ -53,7 +54,7 @@ body {
 }
 
 .nav-link:hover {
-    background-color: #625aa8;
+    background-color: #040425;
 }
 
 .dropdown {
