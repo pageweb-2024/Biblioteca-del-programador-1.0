@@ -79,3 +79,61 @@ body {
 .dropdown-item:hover {
     background-color: #040425;
 }
+
+.acordeon{
+    max-width: 8000px;
+}
+
+.acordeon .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acordeon .contentBx .Label{
+    position: relative;
+    padding: 10px;
+    background: #27cfd5;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.acordeon .contentBx .Label::before {
+    content: '▶'; 
+    font-size: 1.5em;
+    position: relative; 
+    right: 30px; 
+    transition: transform 0.3s ease, content 0.3s ease;
+}
+
+.acordeon .contentBx.active .Label::before {
+    content: '▼'; 
+    transform: rotate(0deg); 
+}
+
+.acordeon .contentBx .content{
+    background: #258282;   
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: 0.5s;
+}
+
+.acordeon .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
+.acordeon .contentBx .content {
+    background: #3712cc;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    padding: 0 5px; 
+}
+
+.acordeon .contentBx.active .content {
+    height: auto; 
+    padding: 10px; 
+}

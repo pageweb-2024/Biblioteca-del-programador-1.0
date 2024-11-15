@@ -120,18 +120,17 @@ h1{
     font-weight: bold;
 }
 
-.acordeon .contentBx .Label::before{
-    content: '>';
-    position: relative;
-    top: 50%;
-    right: 20%;
-    transform: translateY(-50%);
+.acordeon .contentBx .Label::before {
+    content: '▶'; 
     font-size: 1.5em;
+    position: relative; 
+    right: 30px; 
+    transition: transform 0.3s ease, content 0.3s ease;
 }
 
-.acordeon .contentBx.active .Label::before{
-    content: '>';
-    transform: rotate(-45deg);
+.acordeon .contentBx.active .Label::before {
+    content: '▼'; 
+    transform: rotate(0deg); 
 }
 
 .acordeon .contentBx .content{
@@ -158,4 +157,69 @@ h1{
 .acordeon .contentBx.active .content {
     height: auto; 
     padding: 10px; 
+}
+
+/*dentro del acordeon*/
+
+h3{
+    text-align: center;
+    width: 100px;
+    height: auto;
+}
+strong{
+    font-size: 25px;
+    padding: 10px;
+    margin: auto;
+}
+
+.text-img {
+    display: flex;
+    gap: 100px; /* Espacio entre el texto y la imagen */
+    align-items: flex-start;
+}
+
+.text-img img {
+    width: 250px; 
+    height: 180px; 
+    border-radius: 8px; 
+    margin-left: 5px; 
+    border: 5px solid black; 
+}
+
+.text-content {
+    max-width: 60%;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: column; /* Apilar imágenes verticalmente */
+    gap: 20px; /* Espacio entre imágenes */
+}
+
+.text-content p {
+    font-size: 1.1em; 
+    color: black; 
+    line-height: 1.6em; 
+    text-align: justify; 
+    margin: 0;
+}
+
+.lis-p {
+    margin: 10px 0 0 20px;
+    padding: 12x;
+}
+
+.lis-p li {
+    margin-bottom: 20px;
+}
+
+.image-content img {
+    width: 250px; 
+    height: auto; 
+    border-radius: 8px; 
+    border: 5px solid black; 
+}
+P{
+    text-align: justify;
+    padding: 25px;
 }
