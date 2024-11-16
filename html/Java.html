@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/Java.css">
     <title>JAVA</title>
 </head>
+
 <body>
     <header class="header">
         <nav class="nav-menu">
@@ -14,7 +16,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">Programación Web</a>
                     <div class="dropdown">
-                        <a href="#history-web" class="dropdown-item">Historia</a>
+                        <a href="Seccion_2_Programacion-web.html" class="dropdown-item">Historia</a>
                         <a href="html.html" class="dropdown-item">HTML</a>
                         <a href="css.html" class="dropdown-item">CSS</a>
                         <a href="python.html" class="dropdown-item">PYTHON</a>
@@ -26,9 +28,9 @@
                     <a href="#" class="nav-link">Prog. Para Videojuegos</a>
                     <div class="dropdown">
                         <a href="Seccion_3_Prog_Videojuegos.html" class="dropdown-item">Historia</a>
-                        <a href="#js-games" class="dropdown-item">JS</a>
-                        <a href="#cpp" class="dropdown-item">C++</a>
-                        <a href="#csharp" class="dropdown-item">C#</a>
+                        <a href="javascript.html" class="dropdown-item">JS</a>
+                        <a href="c++.html" class="dropdown-item">C++</a>
+                        <a href="csharp.html" class="dropdown-item">C#</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -41,19 +43,83 @@
                 </li>
             </ul>
         </nav>
+        <hr>
     </header>
 
-    <div class="python-logo">
-        <img class="image-python" src="../images/CSS.png" alt="" />
+    <div class="java-logo">
+        <img class="image-java" src="../images/JAVA.png" alt="" />
     </div>
 
-    <h1>CSS</h1>
+    <h1>JAVA</h1>
 
     <div class="acordeon">
         <div class="contentBx">
             <div class="Label">HISTORIA DEL LENGUAJE</div>
             <div class="content">
-               <ul></ul> 
+                <ul>
+                    <strong>ORIGENES</strong>
+                    <div class="text-img">
+                        <p>
+                            Java comienza a principios de los años 90 en Sun Microsystems, una empresa de tecnología
+                            fundada por Andy Bechtolsheim, Bill Joy, Vinod Khosla y Scott McNealy. El desarrollo de Java
+                            fue liderado por James Gosling, quien es considerado el "padre" de Java.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/historia/James Gosling.jfif" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>PRIMERA VERSION</strong>
+                    <div class="text-img">
+                        <p>
+                            En 1991, un equipo de ingenieros de Sun Microsystems, liderado por James Gosling, inició el
+                            proyecto denominado "Green Project". El objetivo original era desarrollar una tecnología que
+                            pudiera funcionar en electrodomésticos y pequeños dispositivos como televisores y
+                            decodificadores. El equipo creó un lenguaje llamado Oak, inspirado en lenguajes como C y
+                            C++, pero diseñado para ser independiente de la plataforma.
+
+                            En 1994, al ver el crecimiento de la web, el equipo se dio cuenta de que Oak podría ser
+                            ideal para aplicaciones web interactivas. Cambiaron el enfoque hacia este nuevo mercado.
+                            Finalmente, en 1995, Oak fue renombrado como Java (nombre que proviene de un tipo de café) y
+                            lanzado al público con la versión 1.0 del JDK (Java Development Kit).
+                        </P>
+                        <img src="../recursos/seccion_13_Java/Recursos/historia/java 1.0.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>EVOLUCION</strong>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Java 1.0 y la Web: Con el lanzamiento de Java en 1996, el lenguaje comenzó a ganar
+                                popularidad rápidamente. Sun Microsystems promovió Java como un lenguaje que permitía a
+                                los desarrolladores escribir código una sola vez y ejecutarlo en cualquier plataforma
+                                que tuviera la Máquina Virtual de Java (JVM).
+                            </li>
+                            <img src="../recursos/seccion_13_Java/Recursos/historia/java 1.0.png" alt="">
+                            <li>
+                                Java en código abierto: En 2006, Sun Microsystems decidió hacer de Java un software de
+                                código abierto bajo la licencia GNU General Public License (GPL). Este movimiento fue un
+                                paso importante en la historia de Java, ya que permitió a la comunidad contribuir
+                                activamente a su desarrollo.
+                            </li>
+                            <img src="../recursos/seccion_13_Java/Recursos/historia/Java en codigo abierto.png" alt="">
+                        </ul>
+                    </div>
+                </ul>
+                <ul>
+                    <strong>PRESENTE</strong>
+                    <div class="text-img">
+                        <p>
+                            Desarrollo continuo y presente: Desde 2018, Oracle adoptó un ciclo de lanzamientos de
+                            versiones cada seis meses para Java. Este ciclo garantiza actualizaciones frecuentes y
+                            permite a los desarrolladores adoptar nuevas características de manera constante. Las
+                            versiones Java 11 y Java 17 son versiones de soporte a largo plazo (LTS), utilizadas
+                            ampliamente en proyectos empresariales debido a su estabilidad.
+                        </P>
+                        <img src="../recursos/seccion_13_Java/Recursos/historia/Java 11.png" alt="">
+                        <img src="../recursos/seccion_13_Java/Recursos/historia/Java 17.jfif" alt="">
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -62,7 +128,43 @@
         <div class="contentBx">
             <div class="Label">PORQUE ES IMPORTANTE</div>
             <div class="content">
-               <ul></ul> 
+                <P>
+                    Java es importante por varias razones clave, que han contribuido a su impacto duradero en el mundo
+                    de la tecnología y su adopción masiva en múltiples industrias.
+                </P>
+                <ul>
+                    <strong>Portabilidad (Write Once, Run Anywhere - WORA)</strong>
+                    <div class="text-img">
+                        <p>
+                            Java fue diseñado con la idea de ser independiente de la plataforma, lo que significa que el
+                            código escrito en Java puede ejecutarse en cualquier dispositivo que tenga una Máquina
+                            Virtual de Java (JVM).
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/porque/Portabilidad (Write Once, Run Anywhere - WORA).jfif"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Popularidad en el desarrollo empresarial</strong>
+                    <div class="text-img">
+                        <p>
+                            Java es el lenguaje dominante en el desarrollo de aplicaciones empresariales, principalmente
+                            debido a su plataforma Java EE (Enterprise Edition), ahora conocida como Jakarta EE.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/porque/Popularidad en el desarrollo empresarial.jpg"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Seguridad</strong>
+                    <div class="text-img">
+                        <p>
+                            Desde el principio, Java fue diseñado con un fuerte enfoque en la seguridad, especialmente
+                            para entornos de red.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/porque/Seguridad.jfif" alt="">
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -71,7 +173,127 @@
         <div class="contentBx">
             <div class="Label">CONCEPTOS BASICOS DEL LENGUAJE</div>
             <div class="content">
-               <ul></ul> 
+                <ul>
+                    <strong>Sintaxis basica</strong>
+                    <div class="text-img">
+                        <p>
+                            Es la forma clásica de comenzar con cualquier lenguaje de programación.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/hola mundo.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Variables</strong>
+                    <div class="text-img">
+                        <P>
+                            Tipos primitivos: Son tipos básicos y no objetos.
+                        </P>
+                        <ul class="lis-p">
+                            <li>
+                                int: enteros (números sin decimales).
+                            </li>
+                            <li>
+                                double: números con decimales.
+                            </li>
+                            <li>
+                                char: caracteres individuales.
+                            </li>
+                            <li>
+                                boolean: valores lógicos (true o false).
+                            </li>
+                        </ul>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/variables y tipos de datos.JPG"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Variables</strong>
+                    <div class="text-img">
+                        <P>
+                            Tipos de referencia: Son tipos complejos como clases, arreglos y objetos.
+                        </P>
+                        <ul class="lis-p">
+                            <li>
+                                String: cadenas de texto.
+                            </li>
+                            <li>
+                                ArrayList: lista de objetos.
+                            </li>
+                        </ul>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/variables y tipos de datos.JPG"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Operadores</strong>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Aritméticos: +, -, *, /, ** (potencia), % (módulo).
+                            </li>
+                            <li>
+                                De comparación: ==, !=, >, <,>=, <=. </li>
+                            <li>
+                                Lógicos: and, or, not.
+                            </li>
+                            <li>
+                                De asignación: =, +=, -=, *=, /=.
+                            </li>
+                        </ul>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/operadores 1.JPG" alt="">
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/operadores 2.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Estructuras de control de flujo de control de excepciones</strong>
+                    <div class="text-img">
+                        <p>
+                            El manejo de errores permite capturar y tratar los errores que ocurren durante la ejecución
+                            de un programa para que no se detenga abruptamente. En JAVA, existen diversas formas de
+                            manejar errores, incluyendo el uso de la función try-catch para manejar excepciones.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/Estructuras de control de flujo condicionales.JPG"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Bucle “for“</strong>
+                    <div class="text-img">
+                        <p>
+                            El bucle “for” se utiliza para iterar sobre una secuencia de elementos, como una lista o una
+                            cadena de texto.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/for.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Bucle “while“ y “do-while“</strong>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                El bucle “while” se utiliza para repetir una instrucción o conjunto de instrucciones
+                                mientras se cumpla una condición determinada.
+                            </li>
+                            <li>
+                                es similar al bucle while, pero garantiza que el bloque de código se ejecute al menos
+                                una vez, ya que la condición se evalúa después de la ejecución.
+                            </li>
+
+                        </ul>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/while.JPG" alt="">
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/do-while.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Switch</strong>
+                    <div class="text-img">
+                        <p>
+                            Es útil cuando tienes múltiples posibles valores para una variable se inicia con el
+                            “Switch”.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/imagenes codigo Java/swith.JPG" alt="">
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -80,7 +302,37 @@
         <div class="contentBx">
             <div class="Label">HERRAMIENTAS CON LAS QUE SE USA</div>
             <div class="content">
-               <ul></ul> 
+                <ul>
+                    <strong>Eclipse</strong>
+                    <div class="text-img">
+                        <p>
+                            Uno de los IDEs más populares y versátiles para Java. Tiene soporte para plugins y es
+                            ampliamente utilizado en el desarrollo empresarial.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/herramientas/Eclipse.jfif" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Javac</strong>
+                    <div class="text-img">
+                        <p>
+                            El compilador que convierte el código fuente en bytecode que se ejecuta en la Máquina
+                            Virtual de Java (JVM).
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/herramientas/Javac.jfif" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Maven</strong>
+                    <div class="text-img">
+                        <p>
+                            Es la herramienta de gestión de dependencias más popular en el ecosistema Java. Facilita la
+                            construcción, empaquetado y configuración de proyectos, utilizando un archivo pom.xml para
+                            definir dependencias y configuraciones del proyecto.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/herramientas/Maven.png" alt="">
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -89,7 +341,37 @@
         <div class="contentBx">
             <div class="Label">LENGUAJES Y TECNOLOGIAS QUE COMPLEMENTAN EL LENGUAJE</div>
             <div class="content">
-               <ul></ul> 
+                <ul>
+                    <strong>JavaScript</strong>
+                    <div class="text-img">
+                        <p>
+                            JavaScript es el principal lenguaje para el desarrollo web del lado del cliente, y
+                            frameworks como Node.js también permiten su uso en el backend, aunque a menudo se usa en
+                            combinación con Java en arquitecturas de microservicios.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/complementos/javascript.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Python</strong>
+                    <div class="text-img">
+                        <p>
+                            Aunque Python no se ejecuta directamente sobre la JVM, se puede integrar con Java a través
+                            de Jython, una implementación de Python para la JVM..
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/complementos/Python.jfif" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>HTML y CSS</strong>
+                    <div class="text-img">
+                        <p>
+                            En aplicaciones web basadas en Java, como las que usan Spring o JavaServer Faces (JSF), el
+                            frontend utiliza HTML para estructurar el contenido y CSS para diseñarlo.
+                        </p>
+                        <img src="../recursos/seccion_13_Java/Recursos/complementos/HTML y CSS.jfif" alt="">
+                    </div>
+                </ul>
             </div>
         </div>
     </div>
@@ -98,7 +380,13 @@
         <div class="contentBx">
             <div class="Label">RESUMEN</div>
             <div class="content">
-               <ul></ul> 
+                <p>
+                    Java se complementa con varios lenguajes y tecnologías para desarrollar aplicaciones completas y
+                    eficientes.
+
+                    Java, junto a estas tecnologías, ofrece un ecosistema amplio para construir aplicaciones web,
+                    móviles y empresariales escalables y modernas.
+                </p>
             </div>
         </div>
     </div>
@@ -109,4 +397,5 @@
 
     <script src="../java/java.js"></script>
 </body>
+
 </html>

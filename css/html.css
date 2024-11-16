@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #d78d1e;
@@ -7,7 +13,7 @@ body {
 .header {
     background-color: #d78d1e;
     padding: 1rem;
-    box-shadow: 0 2px 5px rgb(245, 243, 243);
+    box-shadow: 0 2px 5px #d78d1e(245, 243, 243);
 }
 
 .logo {
@@ -215,4 +221,26 @@ strong{
 P{
     text-align: justify;
     padding: 25px;
+}
+
+/*boton de volver*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.button {
+    background-color: #d2d527; 
+    color: black; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center;
+    transition: background-color 0.3s ease; 
 }
