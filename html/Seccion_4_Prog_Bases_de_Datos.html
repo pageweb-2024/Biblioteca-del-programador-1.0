@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca del Programador - Programación para Bases de Datos</title>
+    <link rel="stylesheet" href="../css/Seccion_4_Prog_Bases_de_Datos.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="../index.html" class="logo"><img src="../images/Logo_3_Sin_Fondo.png" alt="" /></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Programación Web</a>
+                    <div class="dropdown">
+                        <a href="Seccion_2_Programacion-web.html" class="dropdown-item">Historia</a>
+                        <a href="html.html" class="dropdown-item">HTML</a>
+                        <a href="css.html" class="dropdown-item">CSS</a>
+                        <a href="python.html" class="dropdown-item">PYTHON</a>
+                        <a href="php.html" class="dropdown-item">PHP</a>
+                        <a href="Java.html" class="dropdown-item">Java</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Videojuegos</a>
+                    <div class="dropdown">
+                        <a href="Seccion_3_Prog_Videojuegos.html" class="dropdown-item">Historia</a>
+                        <a href="javascript.html" class="dropdown-item">JS</a>
+                        <a href="c++.html" class="dropdown-item">C++</a>
+                        <a href="csharp.html" class="dropdown-item">C#</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Bases de Datos</a>
+                    <div class="dropdown">
+                        <a href="Seccion_4_Prog_Bases_de_Datos.html" class="dropdown-item">Historia</a>
+                        <a href="sql.html" class="dropdown-item">SQL</a>
+                        <a href="nosql.html" class="dropdown-item">NoSQL</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <h1>PROGRAMACIÓN PARA BASES DE DATOS</h1>
+
+    <div>
+        <section class="main-section">
+            <details>
+                <summary class="dropdown-btn">HISTORIA DE LA PROGRAMACIÓN PARA BASES DE DATOS</summary>
+                <div class="dropdown-content">
+                    <p>
+                        La programación para bases de datos se centra en diseñar, gestionar y consultar datos mediante
+                        sistemas de gestión (SGBD) como MySQL, PostgreSQL o MongoDB.</p>
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Años 1950-1960: Los inicios:</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="../recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Primeras-Bases-de-Datos.jpg"
+                                alt="Imagen Primeras Bases de Datos">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Bases de datos jerarquicas.png"
+                                alt="Imagen Bases de Datos Jerarquicas">
+                            <ul>
+                                <li><strong>Primeros sistemas de bases de datos:</strong> Surgieron en la década de 1950
+                                    para satisfacer las necesidades de almacenamiento y procesamiento de datos de
+                                    grandes organizaciones, como empresas y gobiernos.</li>
+                                <li><strong>Ficheros planos:</strong> Los datos se organizaban en archivos secuenciales
+                                    que requerían acceso lineal. La programación era específica para cada aplicación, lo
+                                    que hacía que los cambios fueran complejos y costosos.</li>
+                                <li><strong>SGBD jerárquicos y en red:</strong> En los años 60, surgen modelos
+                                    jerárquicos (como IBM IMS, 1966) y de red (como IDS de Charles Bachman). Estos
+                                    modelos permitían relaciones más estructuradas entre datos, aunque seguían siendo
+                                    rígidos y difíciles de manejar.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Años 1970: El modelo relacional:</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Edgar F. Codd.jpg"
+                                alt="Edgar F. Codd">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Oracle.jfif" alt="Oracle">
+                            <ul>
+                                <li><strong>Introducción del modelo relacional:</strong> Edgar F. Codd presentó en 1970
+                                    el modelo relacional, que organiza los datos en tablas relacionadas y utiliza
+                                    álgebra relacional para manipularlos. Esto marcó un cambio revolucionario hacia la
+                                    simplicidad y flexibilidad.</li>
+                                <li><strong>Lenguajes de consulta:</strong> En 1974 se desarrolló SEQUEL (precursor de
+                                    SQL, Structured Query Language), que se convirtió en el estándar para interactuar
+                                    con bases de datos relacionales.</li>
+                                <li><strong>Primeros sistemas comerciales:</strong> Oracle lanzó su sistema de base de
+                                    datos en 1979, seguido por IBM DB2 y otros competidores.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Años 1980: Expansión y estandarización:</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/SQL.jfif" alt="SQL">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/ACID.png" alt="ACID">
+
+                            <ul>
+                                <li><strong>Estandarización de SQL:</strong> En 1986, SQL se convirtió en un estándar de
+                                    ANSI e ISO, consolidándolo como el principal lenguaje para bases de datos
+                                    relacionales.</li>
+                                <li><strong>Nuevas capacidades:</strong> Se introducen índices avanzados, transacciones
+                                    ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad) y herramientas para
+                                    optimizar consultas, haciendo las bases de datos más robustas y confiables.</li>
+                                <li><strong>Interfaces gráficas:</strong> Los sistemas comienzan a incorporar interfaces
+                                    de usuario más accesibles, ampliando su adopción.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Años 1990: Bases de datos distribuidas y orientadas a objetos:
+                        </summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Base de Datos distribuida.jpg"
+                                alt="Bases de Datos Distribuidas">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Base de Datos Orientada a Objetos.JPG"
+                                alt="Bases de Datos Orientada a Objetos">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Bases de Datos Web.jfif"
+                                alt="Bases de Datos Web">
+                            <ul>
+                                <li><strong>Bases de datos distribuidas:</strong> Surgen para manejar datos en múltiples
+                                    ubicaciones físicas, impulsadas por la expansión de redes como Internet.</li>
+                                <li><strong>Bases de datos orientadas a objetos:</strong> Inspiradas por la programación
+                                    orientada a objetos, estas bases permiten almacenar objetos complejos. Ejemplo:
+                                    ObjectStore y Versant.</li>
+                                <li><strong>Surgimiento de bases de datos para la web:</strong> MySQL (1995) y
+                                    PostgreSQL (1996) ofrecen soluciones robustas, abiertas y adaptadas a aplicaciones
+                                    web.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Años 2000: Big Data y NoSQL:</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/NoSQL.JPG" alt="NoSQL">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Big-data-and-MapReduce.png"
+                                alt="Big Data y MapReduce">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Almacenamiento en la Nube.jpg"
+                                alt="Almacenamiento en la nube">
+                            <ul>
+                                <li><strong>Bases de datos NoSQL:</strong> Aparecen para gestionar grandes volúmenes de
+                                    datos no estructurados y de alto rendimiento. Ejemplo: MongoDB, Cassandra y Redis.
+                                </li>
+                                <li><strong>Big Data y MapReduce:</strong> Herramientas como Hadoop y tecnologías de
+                                    análisis masivo impulsan la capacidad de trabajar con datos a gran escala, rompiendo
+                                    barreras de las bases relacionales tradicionales.</li>
+                                <li><strong>Almacenamiento en la nube:</strong> Servicios como Amazon RDS, Google
+                                    BigQuery y Microsoft Azure revolucionan el acceso y la escalabilidad de las bases de
+                                    datos.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Años 2010-2020: Inteligencia artificial y bases de datos
+                            modernas:</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Bases de Datos en memoria.JPG"
+                                alt="Bases de Datos en memoria">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Automatización e AI.JPG"
+                                alt="Automatización e AI">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Edge Computing.JPG"
+                                alt="Edge Computing">
+                            <ul>
+                                <li><strong>Bases de datos en memoria:</strong> Tecnologías como SAP HANA permiten
+                                    consultar datos directamente desde la memoria RAM, acelerando el rendimiento.</li>
+                                <li><strong>Bases multimodelo:</strong> Combina múltiples paradigmas (relacional, NoSQL,
+                                    grafos) en un solo sistema, como ArangoDB y Cosmos DB.</li>
+                                <li><strong>Automatización e IA:</strong> Las bases de datos empiezan a incluir
+                                    capacidades de auto-optimización, predicción y análisis de patrones mediante IA.
+                                </li>
+                                <li><strong>Edge Computing:</strong> Surgen bases diseñadas para trabajar en entornos
+                                    distribuidos en el límite de las redes (por ejemplo, dispositivos IoT).</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Actualidad y futuro:</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Bases de Datos Cuanticas.jpg"
+                                alt="Bases de Datos Cuanticas">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Integración Avanzada.png"
+                                alt="Integración Avanzada">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Privacidad y Seguridad.JPG"
+                                alt="Privacidad y Seguridad">
+                            <ul>
+                                <li><strong>Bases de datos cuánticas:</strong> En investigación, buscan explotar la
+                                    computación cuántica para manejar datos de formas aún más rápidas y eficientes.</li>
+                                <li><strong>Integración avanzada:</strong> Sistemas como Snowflake y Databricks combinan
+                                    capacidades analíticas con bases transaccionales.</li>
+                                <li><strong>Privacidad y seguridad:</strong> Las bases modernas están diseñadas para
+                                    cumplir con regulaciones como GDPR y garantizar la seguridad de los datos.</li>
+                            </ul>
+                            <p>Desde su inicio hasta hoy, la programación para bases de datos ha evolucionado de
+                                sistemas rígidos y específicos a plataformas versátiles y escalables, siendo clave para
+                                la transformación digital en todos los sectores.</p>
+                        </div>
+                    </details>
+
+                </div>
+            </details>
+
+            <!--SECCION-->
+
+            <details>
+                <summary class="dropdown-btn">ASPECTOS BÁSICOS</summary>
+                <div class="dropdown-content">
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Conceptos Fundamentales</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Base de Datos.jpg"
+                                alt="Base de Datos">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/SGBD.jpg" alt="SGBD">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Modelo de Datos.jpg"
+                                alt="Imagen de logo de Godot">
+                            <ul>
+                                <li><strong>Base de datos:</strong> Conjunto estructurado de datos almacenados de forma
+                                    que pueden ser fácilmente accedidos y gestionados.</li>
+                                <li><strong>SGBD:</strong> Software que permite a los usuarios interactuar con una base
+                                    de datos. Ejemplos: MySQL, PostgreSQL, MongoDB, Oracle DB.</li>
+                                <li><strong>Modelo de datos:</strong> Define cómo se organizan los datos. Los modelos
+                                    más comunes son:
+                                    <ul>
+                                        <li><strong>Relacional:</strong> Datos en tablas relacionadas (SQL).</li>
+                                        <li><strong>NoSQL:</strong> Maneja datos no estructurados (documentos, grafos,
+                                            pares clave-valor).</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Lenguajes de Programación para Bases de Datos</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/SQL.png" alt="SQL">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/NoSQL.png" alt="NoSQL">
+                            <ul>
+                                <li><strong>SQL (Structured Query Language):</strong> Estándar para bases de datos
+                                    relacionales. Permite:
+                                    <ul>
+                                        <li><strong>Definición de datos (DDL):</strong> Crear y modificar estructuras
+                                            (tablas, índices).
+                                            Ejemplo: CREATE TABLE usuarios (id INT, nombre VARCHAR(50));</li>
+                                        <li><strong>Manipulación de datos (DML):</strong> Insertar, actualizar, eliminar
+                                            y consultar datos.
+                                            Ejemplo: SELECT * FROM usuarios WHERE nombre = 'Juan';</li>
+                                        <li><strong>Control de datos (DCL):</strong> Gestionar permisos de acceso.</li>
+                                        <li><strong>Control de transacciones (TCL):</strong> Administrar transacciones
+                                            (COMMIT, ROLLBACK).</li>
+                                    </ul>
+                                </li>
+                                <li><strong>NoSQL:</strong> Los lenguajes y comandos varían según la base de datos, pero
+                                    suelen trabajar con estructuras JSON, consultas específicas o APIs.
+                                    Ejemplo en MongoDB: db.usuarios.find({nombre: "Juan"});</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Diseño de Bases de Datos</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Diseño de Bases de Datos.png"
+                                alt="Diseño de Bases de Datos">
+                            <ul>
+                                <li><strong>Normalización:</strong> Proceso para estructurar tablas y reducir
+                                    redundancia.</li>
+                                <li><strong>Relaciones:</strong> En bases relacionales, se definen relaciones entre
+                                    tablas (1:1, 1:N, N:M).</li>
+                                <li><strong>Índices:</strong> Optimizan la velocidad de consultas en campos clave.</li>
+                                <li><strong>Integridad referencial:</strong> Uso de claves primarias y foráneas para
+                                    asegurar consistencia.</li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Operaciones Básicas</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/CRUD.png"
+                                alt="CRUD Bases de Datos">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Consultas.png"
+                                alt="Consultas en Bases de Datos">
+                            <ul>
+                                <li><strong>CRUD:</strong> Operaciones fundamentales para interactuar con datos:
+                                    <ul>
+                                        <li><strong>Create:</strong> Insertar nuevos registros.</li>
+                                        <li><strong>Read:</strong> Leer y consultar datos.</li>
+                                        <li><strong>Update:</strong> Modificar datos existentes.</li>
+                                        <li><strong>Delete:</strong> Eliminar registros.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Consultas:</strong> Uso de comandos y operadores para obtener información
+                                    específica.
+                                    <ul>
+                                        <li> Filtros: WHERE, AND, OR.</li>
+                                        <li> Ordenamiento: ORDER BY.</li>
+                                        <li> Agrupamiento: GROUP BY.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Seguridad y Transacciones</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Seguridad.png"
+                                alt="Seguridad en Bases de Datos">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/ACID 2.jfif" alt="ACID 2">
+                            <ul>
+                                <li><strong>Seguridad:</strong>
+                                    <ul>
+                                        <li>Control de accesos: Definir permisos para usuarios y roles.</li>
+                                        <li>Cifrado: Asegurar datos sensibles.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Transacciones:</strong> Conjunto de operaciones que se ejecutan de forma
+                                    atómica, asegurando consistencia. Propiedades ACID:
+                                    <ul>
+                                        <li><strong>Atomicidad:</strong> Todo o nada.</li>
+                                        <li><strong>Consistencia:</strong> Mantener reglas del sistema.</li>
+                                        <li><strong>Aislamiento:</strong> Independencia entre transacciones.</li>
+                                        <li><strong>Durabilidad:</strong> Persistencia tras completarse.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Herramientas y Entornos de Desarrollo</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Herramientas Gráficas.jpg"
+                                alt="Herramientas Gráficas">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/PYTHON.png" alt="Python">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Java.png" alt="Java">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/JS.png" alt="JavaScript">
+                            <ul>
+                                <li><strong>Herramientas gráficas:</strong> Interfaces como phpMyAdmin, DBeaver o
+                                    PgAdmin simplifican la interacción.</li>
+                                <li><strong>Integración con lenguajes de programación:</strong> Conectores para integrar
+                                    bases de datos con aplicaciones. Ejemplo:
+                                    <ul>
+                                        <li>Python: sqlite3, SQLAlchemy.</li>
+                                        <li>Java: JDBC.</li>
+                                        <li>JavaScript: mongoose para MongoDB.</li>
+                                </li>
+                            </ul>
+                            </li>
+                            </ul>
+                        </div>
+                    </details>
+
+                    <details class="sub-section">
+                        <summary class="sub-dropdown-btn">Tendencias Modernas</summary>
+                        <div class="sub-dropdown-content">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Firebase Cassandra.png"
+                                alt="Bases de Datos en Tiempo Real">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Bases Multimodelo.JPG"
+                                alt="Bases Multimodelo">
+                            <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Graph vs Rest.png"
+                                alt="APIs y Microservicios">
+                            <ul>
+                                <li><strong>Bases de datos en tiempo real:</strong> Soportan actualizaciones
+                                    instantáneas (Firebase, Cassandra).</li>
+                                <li><strong>Bases multimodelo:</strong> Permiten trabajar con varios paradigmas
+                                    (relacional, grafos, etc.).</li>
+                                <li><strong>APIs y microservicios:</strong> Conexión mediante endpoints REST o GraphQL.
+                                </li>
+                            </ul>
+                        </div>
+                    </details>
+                </div>
+            </details>
+
+            <!--SECCION 3-->
+
+            <details>
+                <summary class="dropdown-btn">RESUMEN</summary>
+                <div class="dropdown-content">
+
+                    <div class="sub-dropdown-content">
+                        <img src="/recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Resumen SQL NoSQL.jpg"
+                            alt="SQL vs NoSQL">
+                        <p>La programación para bases de datos se centra en diseñar, gestionar y consultar datos
+                            mediante sistemas de gestión (SGBD) como MySQL, PostgreSQL o MongoDB. Los datos pueden
+                            organizarse en modelos relacionales (tablas) o NoSQL (documentos, grafos). SQL es el
+                            lenguaje estándar para bases relacionales, con comandos para definir estructuras (DDL),
+                            manipular datos (DML) y gestionar transacciones (TCL). En bases NoSQL, las consultas varían
+                            según la tecnología. <br>El diseño incluye normalización, relaciones entre tablas e índices
+                            para optimizar consultas.
+                            Operaciones básicas (CRUD) permiten crear, leer, actualizar y eliminar datos, asegurando
+                            consistencia mediante transacciones ACID. Además, se integran medidas de seguridad como
+                            permisos y cifrado. <br>La programación se integra con lenguajes como Python, Java o
+                            JavaScript mediante conectores,
+                            y herramientas como DBeaver o phpMyAdmin facilitan la gestión. Las bases modernas incluyen
+                            características como tiempo real, modelos híbridos y soporte para grandes volúmenes de datos
+                            en la nube.</p>
+                    </div>
+
+                </div>
+            </details>
+
+            <div class="final-button-container">
+                <a href="../index.html" class="final-button">VOLVER</a>
+            </div>
+
+
+        </section>
+    </div>
+</body>
+
+</html>

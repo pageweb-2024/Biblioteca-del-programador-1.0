@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nosql.css">
+    <title>NoSQL</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="../index.html" class="logo"><img src="../images/Logo_3_Sin_Fondo.png" alt="" /></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Programación Web</a>
+                    <div class="dropdown">
+                        <a href="Seccion_2_Programacion-web.html" class="dropdown-item">Historia</a>
+                        <a href="html.html" class="dropdown-item">HTML</a>
+                        <a href="css.html" class="dropdown-item">CSS</a>
+                        <a href="python.html" class="dropdown-item">PYTHON</a>
+                        <a href="php.html" class="dropdown-item">PHP</a>
+                        <a href="Java.html" class="dropdown-item">JAVA</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Videojuegos</a>
+                    <div class="dropdown">
+                        <a href="Seccion_3_Prog_Videojuegos.html" class="dropdown-item">Historia</a>
+                        <a href="javascript.html" class="dropdown-item">JS</a>
+                        <a href="c++.html" class="dropdown-item">C++</a>
+                        <a href="csharp.html" class="dropdown-item">C#</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Bases de Datos</a>
+                    <div class="dropdown">
+                        <a href="Seccion_4_Prog_Bases_de_Datos.html" class="dropdown-item">Historia</a>
+                        <a href="sql.html" class="dropdown-item">SQL</a>
+                        <a href="nosql.html" class="dropdown-item">NoSQL</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <div class="nosql-logo">
+        <img class="image-nosql" src="../images/NoSQL.png" alt="" />
+    </div>
+
+    <h1>NoSQL</h1>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">HISTORIA DEL LENGUAJE</div>
+            <div class="content">
+                <ul>
+                    <div class="text-img">
+                        <p>
+                            El término NoSQL se refiere a un conjunto de tecnologías de bases de datos que surgieron
+                            como alternativa a las bases de datos relacionales (SQL). Aunque el concepto de bases de
+                            datos no relacionales data de la década de 1960, NoSQL ganó popularidad en la década de 2000
+                            con el auge de aplicaciones web y la necesidad de manejar grandes volúmenes de datos no
+                            estructurados, distribuidos y de alto rendimiento. Empresas como Google, Amazon y Facebook
+                            impulsaron su adopción, desarrollando sistemas como BigTable, Dynamo y Cassandra. En 2009,
+                            el término NoSQL fue popularizado por movimientos en la comunidad de desarrolladores para
+                            describir bases de datos que no siguen el modelo relacional tradicional.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Historia NoSQL.jpg" alt="Historia NoSQL">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">PORQUE ES IMPORTANTE</div>
+            <div class="content">
+                <ul>
+                    <p>
+                        El lenguaje NoSQL es crucial para gestionar bases de datos no relacionales, especialmente cuando
+                        se manejan grandes volúmenes de datos no estructurados o semiestructurados. Su flexibilidad
+                        permite almacenar datos en formatos como documentos, grafos o pares clave-valor, lo que facilita
+                        un rendimiento escalable y consultas rápidas. Es ideal para aplicaciones modernas como redes
+                        sociales, IoT y sistemas en tiempo real, donde la estructura de datos puede cambiar con
+                        frecuencia.
+                    </p>
+                </ul>
+                <ul>
+                    <strong>Grandes volúmenes de datos</strong>
+                    <div class="text-img">
+                        <p>
+                            NoSQL es esencial para manejar grandes volúmenes de datos porque ofrece flexibilidad y
+                            escalabilidad horizontal, permitiendo almacenar y procesar datos no estructurados o
+                            semi-estructurados de manera eficiente. A diferencia de las bases de datos relacionales,
+                            NoSQL soporta esquemas dinámicos y distribuidos, lo que facilita la gestión de grandes
+                            cantidades de información en tiempo real, siendo ideal para aplicaciones modernas como redes
+                            sociales, big data y sistemas de IoT.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Grandes volumenes de Datos.jpg" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Datos no estructurados</strong>
+                    <div class="text-img">
+                        <p>
+                            NoSQL es crucial para manejar datos no estructurados debido a su flexibilidad y capacidad
+                            para gestionar grandes volúmenes de información heterogénea, como documentos, archivos JSON,
+                            y datos de redes sociales. A diferencia de las bases relacionales, NoSQL permite el
+                            almacenamiento sin un esquema fijo, lo que facilita la escalabilidad y el rendimiento en
+                            aplicaciones modernas, como big data, inteligencia artificial y sistemas distribuidos.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Datos no estructurados.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Alto rendimiento y disponibilidad</strong>
+                    <div class="text-img">
+                        <p>
+                            NoSQL está diseñado para gestionar grandes volúmenes de datos no estructurados o
+                            semiestructurados de manera eficiente. A diferencia de las bases de datos relacionales,
+                            NoSQL permite escalabilidad horizontal, lo que significa que puede distribuir datos a través
+                            de múltiples servidores, mejorando el rendimiento y la disponibilidad incluso en sistemas
+                            con alta carga de trabajo. Esto es especialmente útil en aplicaciones modernas como redes
+                            sociales, análisis en tiempo real y plataformas de e-commerce, donde la rapidez y la
+                            disponibilidad continua son esenciales.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Alto rendimiento y Disponibilidad.jpg"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Flexibilidad</strong>
+                    <div class="text-img">
+                        <p>
+                            El lenguaje NoSQL es importante en cuanto a flexibilidad porque permite manejar datos no
+                            estructurados o semi-estructurados, como documentos, grafos o pares clave-valor, sin la
+                            rigidez de las bases de datos relacionales. Esto facilita la adaptación a modelos de datos
+                            cambiantes y permite escalar de manera más eficiente, especialmente en aplicaciones con
+                            grandes volúmenes de datos, alto crecimiento o necesidades de alta disponibilidad. La
+                            flexibilidad de NoSQL permite a los desarrolladores diseñar esquemas dinámicos y optimizar
+                            el rendimiento según las necesidades específicas de cada aplicación.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Flexibilidad.JPG" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">CONCEPTOS BASICOS DEL LENGUAJE</div>
+            <div class="content">
+                <ul>
+                    <strong>Base de Datos NoSQL</strong>
+                    <div class="text-img">
+                        <p>
+                            Las bases de datos NoSQL son sistemas de almacenamiento de datos no relacionales, diseñados
+                            para manejar grandes volúmenes de datos no estructurados o semiestructurados. A diferencia
+                            de las bases de datos relacionales, NoSQL no requiere un esquema fijo y es más flexible en
+                            cuanto a la forma en que almacena la información.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Base de Datos NoSQL.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Tipos de Bases de Datos NoSQL</strong>
+                    <p>
+                        Existen varios tipos de bases de datos NoSQL, cada uno adecuado para diferentes necesidades:
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Documentales: Almacenan y gestionan datos en formato de documentos (generalmente JSON,
+                                BSON o XML). Cada documento es independiente y puede tener diferentes estructuras.<br>
+                                <br>
+                                <ul>
+                                    <li>MongoDB es una de las más populares. Se utiliza para almacenar datos
+                                        semi-estructurados, como productos, <br>usuarios o registros de aplicaciones.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Clave-Valor: Almacenan datos como pares clave-valor. La clave es única, y su valor puede
+                                ser cualquier tipo de dato, <br>como un objeto o cadena.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: Redis es un ejemplo común. Es ideal para aplicaciones que necesitan un
+                                        acceso rápido a datos, <br>como sesiones de usuario, caché o configuraciones.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Columnares: Organizan los datos en columnas en lugar de filas. Esto permite un acceso
+                                más eficiente a grandes <br>volúmenes de datos que se agrupan por columnas.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: Cassandra es un sistema popular que usa este modelo. Es adecuado para
+                                        aplicaciones con grandes <br>cantidades de datos distribuidos, como análisis de
+                                        registros o monitoreo.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                De Grafos: Almacenan datos en forma de nodos y relaciones, lo que las hace adecuadas
+                                para representar relaciones complejas, como redes sociales o rutas de transporte.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: Neo4j es un ejemplo típico, usado para gestionar redes de conexiones,
+                                        como redes sociales, <br>recomendaciones o gestión de conocimiento.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Tipos de bases de Datos NoSQL.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Escalabilidad Horizontal</strong>
+                    <div class="text-img">
+                        <p>
+                            Las bases de datos NoSQL están diseñadas para escalar horizontalmente, lo que significa que
+                            pueden distribuirse a través de múltiples servidores, permitiendo un mejor manejo de grandes
+                            volúmenes de datos y altas cargas de trabajo.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Escalabilidad Horizontal.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Flexibilidad en el Esquema</strong>
+                    <div class="text-img">
+                        <p>
+                            A diferencia de las bases de datos SQL, las bases NoSQL no requieren un esquema fijo. Los
+                            datos pueden variar en estructura, lo que las hace adecuadas para manejar información
+                            semiestructurada o dinámica (como datos JSON).
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Flexibilidad en el Esquema.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Consultas en NoSQL</strong>
+                    <p>
+                        Las consultas en NoSQL varían según el tipo de base de datos y su modelo de almacenamiento. A
+                        diferencia de SQL, NoSQL <br>no sigue un lenguaje de consulta estándar, por lo que cada sistema
+                        tiene su propia sintaxis y enfoque. En general, las consultas <br>en NoSQL son flexibles y
+                        optimizadas para cada tipo de datos y estructura, permitiendo realizar búsquedas eficientes en
+                        grandes <br>volúmenes de datos.
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Bases de datos documentales (como MongoDB) utilizan consultas basadas en JSON o
+                                JavaScript, donde puedes buscar documentos que coincidan con ciertos criterios.
+                            </li>
+                            <li>
+                                Bases de datos clave-valor (como Redis) permiten obtener valores asociados a una clave
+                                específica.
+                            </li>
+                            <li>
+                                Bases de datos columnares (como Cassandra) ofrecen consultas orientadas a obtener datos
+                                de una columna o grupo de columnas.
+                            </li>
+                            <li>
+                                Bases de datos de grafos (como Neo4j) permiten realizar consultas complejas sobre
+                                relaciones entre nodos, utilizando un lenguaje como Cypher.
+                            </li>
+                        </ul>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Consultas en NoSQL.jpg" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Consistencia Eventual</strong>
+                    <div class="text-img">
+                        <p>
+                            La consistencia eventual es un modelo de consistencia utilizado en bases de datos
+                            distribuidas, especialmente en sistemas NoSQL. En este modelo, se permite que los datos no
+                            estén inmediatamente consistentes en todas las réplicas o nodos de la base de datos después
+                            de una actualización. Sin embargo, se garantiza que, con el tiempo, todas las réplicas
+                            eventualmente serán consistentes, es decir, todas las copias de los datos convergerán hacia
+                            el mismo valor. Este enfoque prioriza la disponibilidad y la tolerancia a particiones (según
+                            el teorema CAP), lo que permite que los sistemas sigan funcionando incluso si hay fallos en
+                            la red o en algunos de los nodos. La consistencia eventual es común en sistemas distribuidos
+                            que requieren alta disponibilidad y pueden tolerar una pequeña cantidad de incoherencia
+                            temporal.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Consistencia-Eventual.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Manejo de Datos No Estructurados</strong>
+                    <div class="text-img">
+                        <p>
+                            El **manejo de datos no estructurados** se refiere a la gestión de información que no sigue
+                            un esquema o formato predefinido, como textos, imágenes, videos, correos electrónicos o
+                            registros de redes sociales. A diferencia de los datos estructurados (almacenados en tablas
+                            de bases de datos relacionales), los datos no estructurados no tienen un formato fijo, lo
+                            que hace más difícil su organización y análisis. Las bases de datos NoSQL son ideales para
+                            almacenar y gestionar estos tipos de datos, ya que permiten flexibilidad en la estructura y
+                            escalabilidad para manejar grandes volúmenes de información.
+                        </p>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Manejo de Datos no estructurados.JPG"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Modelos de Consistencia</strong>
+                    <p>
+                        El modelo de consistencia en bases de datos NoSQL describe cómo se gestionan los datos
+                        distribuidos entre varios nodos <br>en un sistema. Cada modelo tiene ventajas y desventajas, y
+                        la elección depende de las necesidades del sistema, como el <br>rendimiento, la disponibilidad y
+                        la tolerancia a particiones. Los modelos más comunes son:
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Consistencia Fuerte (Strong Consistency): Todos los nodos ven los mismos datos al mismo
+                                tiempo, garantizando que cualquier lectura devuelva el valor más reciente después de una
+                                escritura, por ejemplo las bases de datos relacionales.
+                            </li>
+                            <li>
+                                Consistencia Eventual (Eventual Consistency): Los datos pueden no ser consistentes en
+                                todo momento, pero eventualmente todos los nodos alcanzarán la misma información. Es más
+                                rápido y escalable, pero puede dar lugar a lecturas inconsistentes temporalmente. Como
+                                ejemplo tenemos Amazon DynamoDB y Cassandra.
+                            </li>
+                            <li>
+                                Consistencia Causal (Causal Consistency): Asegura que las operaciones relacionadas
+                                causalmente se vean en el mismo <br>orden en todos los nodos, pero no garantiza que
+                                todas
+                                las operaciones se vean en el mismo orden en general. Es un compromiso entre
+                                disponibilidad y consistencia.
+                            </li>
+                        </ul>
+                        <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Modelos de Consistencia.png" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" acordeon">
+            <div class="contentBx">
+                <div class="Label">HERRAMIENTAS CON LAS QUE SE USA</div>
+                <div class="content">
+                    <ul>
+                        <p>
+                            Cada tipo de base de datos tiene su propio enfoque y ventajas según las necesidades
+                            específicas del proyecto, como la escalabilidad, la flexibilidad y el tipo de datos que
+                            se manejan.Existen varias herramientas que se utilizan para trabajar con SQL. Algunas de
+                            las más comunes incluyen:
+                        </p>
+                        <div class="text-img">
+                            <ul class="lis-p">
+                                <li>
+                                    Bases de Datos Documentales:<br>
+                                    <br>
+                                    <ul>
+                                        <li>MongoDB: Es una base de datos documental popular que almacena datos en
+                                            documentos JSON <br>(o BSON). Ofrece una gran flexibilidad, permitiendo que
+                                            cada documento tenga una estructura diferente, <br>lo que es ideal para
+                                            aplicaciones que manejan datos dinámicos y no estructurados. MongoDB es
+                                            <br>altamente escalable y es ampliamente utilizado en aplicaciones web y
+                                            móviles.
+                                        </li>
+                                        <li>Couchbase: Es una base de datos documental similar a MongoDB pero con
+                                            capacidades avanzadas de <br>sincronización, lo que la hace ideal para
+                                            aplicaciones distribuidas y móviles. Además de almacenar <br>documentos
+                                            JSON, Couchbase ofrece almacenamiento de valores clave y soporte para
+                                            consultas <br>SQL-like con su lenguaje N1QL, lo que permite realizar
+                                            consultas complejas.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Bases de Datos Documentales.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="text-img">
+                            <ul class="lis-p">
+                                <li>
+                                    Bases de Datos Clave-Valor:<br>
+                                    <br>
+                                    <ul>
+                                        <li>Redis: Es una base de datos clave-valor extremadamente rápida, utilizada
+                                            principalmente como caché o <br>para almacenar datos temporales. Redis
+                                            almacena datos en memoria, lo que le permite ofrecer tiempos <br>de
+                                            respuesta muy rápidos. Es ideal para aplicaciones que requieren un acceso
+                                            rápido y frecuente a los <br>datos, como sistemas de recomendación o
+                                            contadores en tiempo real.
+                                        </li>
+                                        <li>Amazon DynamoDB: Es una base de datos clave-valor proporcionada por Amazon
+                                            Web Services (AWS). <br>Está diseñada para ser altamente escalable y
+                                            disponible, permitiendo manejar grandes volúmenes de <br>datos y tráfico de
+                                            manera automática. DynamoDB ofrece soporte para lectura y escritura de baja
+                                            latencia, <br>y su escalabilidad se maneja de forma automática sin
+                                            intervención del usuario.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Bases de Datos Clave-Valor.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="text-img">
+                            <ul class="lis-p">
+                                <li>
+                                    Bases de Datos Columnares:<br>
+                                    <br>
+                                    <ul>
+                                        <li>Apache Cassandra: Es una base de datos columnar distribuida y altamente
+                                            escalable, diseñada para <br>manejar grandes volúmenes de datos distribuidos
+                                            a través de múltiples nodos. Cassandra es ideal para <br>aplicaciones que
+                                            requieren alta disponibilidad y tolerancia a fallos, como plataformas de
+                                            análisis de big <br>data y aplicaciones en tiempo real.
+                                        </li>
+                                        <li>HBase: Es una base de datos columnar de código abierto basada en el modelo
+                                            de Google BigTable y <br>diseñada para trabajar en conjunto con Hadoop.
+                                            HBase es adecuada para aplicaciones que requieren un <br>almacenamiento de
+                                            datos distribuido, con un enfoque en la escalabilidad y el rendimiento en
+                                            entornos <br>de big data.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Bases de Datos Columnares.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="text-img">
+                            <ul class="lis-p">
+                                <li>
+                                    Bases de Datos de Grafos:<br>
+                                    <br>
+                                    <ul>
+                                        <li>Neo4j: Es una base de datos orientada a grafos que está especializada en la
+                                            representación de <br>relaciones entre datos mediante nodos, aristas y
+                                            propiedades. Es ideal para aplicaciones que necesitan <br>explorar y
+                                            analizar relaciones complejas, como redes sociales, motores de recomendación
+                                            y análisis de <br>fraude.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Neo4j.JPG" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <div class="contentBx">
+                <div class="Label">LENGUAJES Y TECNOLOGIAS QUE COMPLEMENTAN EL LENGUAJE</div>
+                <div class="content">
+                    <ul>
+                        <strong>JavaScript</strong>
+                        <div class="text-img">
+                            <p>
+                                avaScript se utiliza ampliamente en bases de datos NoSQL, especialmente en aquellas que
+                                emplean un modelo basado en documentos, como MongoDB. JavaScript, debido a su naturaleza
+                                orientada a objetos y su formato de objetos JSON, se adapta perfectamente a la
+                                estructura flexible de los documentos en estas bases de datos. En MongoDB, por ejemplo,
+                                las consultas y operaciones se realizan mediante un lenguaje de consulta basado en
+                                JavaScript, lo que permite a los desarrolladores interactuar con la base de datos de
+                                manera intuitiva. Además, muchas bases de datos NoSQL como Couchbase también permiten
+                                usar JavaScript para escribir funciones personalizadas y consultas, integrándose de
+                                forma eficiente con aplicaciones web y móviles, donde JavaScript es el lenguaje
+                                principal para el desarrollo del frontend y backend.
+                            </p>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Javascript.JPG" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>Python</strong>
+                        <div class="text-img">
+                            <p>
+                                Python es ampliamente utilizado para interactuar con bases de datos NoSQL debido a su
+                                simplicidad y la disponibilidad de bibliotecas especializadas. Con Python, se pueden
+                                conectar fácilmente a bases de datos NoSQL como MongoDB, Cassandra o Redis utilizando
+                                bibliotecas como pymongo, cassandra-driver y redis-py. Estas bibliotecas permiten
+                                realizar operaciones como la inserción, consulta, actualización y eliminación de datos,
+                                así como la gestión de colecciones, claves-valor y otros modelos de datos NoSQL. Además,
+                                Python facilita la integración con herramientas de análisis de datos y procesamiento, lo
+                                que lo convierte en una opción popular para aplicaciones que requieren manejar grandes
+                                volúmenes de datos no estructurados y distribuidos.
+                            </p>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Python.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>Java</strong>
+                        <div class="text-img">
+                            <p>
+                                Java se utiliza ampliamente en bases de datos NoSQL debido a su compatibilidad con
+                                diversas bibliotecas y frameworks que facilitan la integración con sistemas NoSQL como
+                                MongoDB, Cassandra o Redis. Java ofrece APIs específicas para interactuar con estas
+                                bases de datos, permitiendo a los desarrolladores realizar operaciones como inserciones,
+                                consultas, actualizaciones y eliminaciones de datos de manera eficiente. Además, Java es
+                                ideal para aplicaciones que requieren escalabilidad y alto rendimiento, ya que puede
+                                manejar grandes volúmenes de datos distribuidos, lo cual es característico de las bases
+                                NoSQL. Su capacidad de integrarse con sistemas distribuidos y su robustez lo hacen una
+                                opción popular para proyectos que manejan datos no estructurados o semiestructurados.
+                            </p>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Java-Logo.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>Go</strong>
+                        <div class="text-img">
+                            <p>
+                                Go (también conocido como Golang) se utiliza ampliamente en el desarrollo de
+                                aplicaciones que interactúan con bases de datos NoSQL debido a su alto rendimiento,
+                                concurrencia y simplicidad. Go ofrece bibliotecas y clientes para bases de datos NoSQL
+                                populares como MongoDB, Cassandra, Redis y Couchbase, permitiendo realizar operaciones
+                                como consultas, inserciones y actualizaciones de manera eficiente. Su modelo de
+                                concurrencia, basado en goroutines, facilita el manejo de múltiples conexiones a bases
+                                de datos, lo que lo convierte en una excelente opción para aplicaciones escalables y de
+                                alto rendimiento que requieren el manejo de grandes volúmenes de datos no estructurados
+                                o semiestructurados.
+                            </p>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/Go.JPG" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>C#</strong>
+                        <div class="text-img">
+                            <p>
+                                C# se utiliza en bases de datos NoSQL para interactuar con estos sistemas de manera
+                                eficiente, gracias a sus bibliotecas y frameworks específicos. A través de paquetes como
+                                MongoDB.Driver para MongoDB, Couchbase.NET SDK para Couchbase, o StackExchange.Redis
+                                para Redis, C# permite realizar operaciones como la inserción, actualización y consulta
+                                de datos sin necesidad de un esquema rígido, lo que es ideal para bases de datos NoSQL.
+                                Con su potente manejo de objetos y su integración con servicios en la nube como Azure
+                                Cosmos DB, C# facilita la construcción de aplicaciones escalables y dinámicas que se
+                                benefician de la flexibilidad y rendimiento de las bases de datos NoSQL.
+                            </p>
+                            <img src="../recursos/Seccion_15_NoSQL/Images NoSQL/CSharp.png" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <div class="contentBx">
+                <div class="Label">RESUMEN</div>
+                <div class="content">
+                    <p>
+                        En Resumen NoSQL se ha convertido en una solución clave para gestionar grandes cantidades de
+                        datos no estructurados y distribuidos. Surgido en respuesta a las limitaciones de las bases de
+                        datos relacionales en aplicaciones modernas, como las redes sociales y el big data, NoSQL ofrece
+                        flexibilidad, escalabilidad y alto rendimiento. Se basa en modelos no relacionales como
+                        documentos, clave-valor, columnas y grafos. Sus tecnologías complementarias incluyen lenguajes
+                        de programación, frameworks ORM y herramientas de análisis de datos. Su flexibilidad en el
+                        manejo de datos lo hace esencial en aplicaciones modernas que requieren alta disponibilidad y
+                        bajo tiempo de respuesta.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="../index.html" class="button">VOLVER</a>
+        </div>
+
+        <script src="../java/nosql.js"></script>
+</body>
+
+</html>

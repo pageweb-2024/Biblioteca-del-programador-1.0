@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #320083;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #320083;
+    padding: 1rem;
+    box-shadow: 0 2px 5px #320083(245, 243, 243);
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;    
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+}
+
+.nav-item {
+    position: relative;            
+}
+
+.nav-link {
+    display: block;
+    padding: 1.2rem;
+    background-color: #040425;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #06003C;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-54%);
+    text-align: center;
+    background-color: #06003C;
+    width: 90%;
+    display: none;
+    box-shadow: 0 2px 10px rgb(5, 5, 5);
+    border: 1px solid white;
+    z-index: 1;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: white;    
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #040425;
+}
+
+/*logo del lenguaje*/
+.nosql-logo{
+    padding: 12px;
+    margin: 12px;
+    text-align: center;
+}
+
+.image-nosql{
+    width: 200px;
+    height: auto;
+}
+
+/*titulo del lenguaje*/
+h1{
+    text-align: center;
+    color: #17003d;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+/*acordeon*/
+.acordeon{
+    max-width: 8000px;
+}
+
+.acordeon .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acordeon .contentBx .Label{
+    position: relative;
+    padding: 10px;
+    background: rgb(30, 5, 58);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.acordeon .contentBx .Label::before {
+    content: '▶'; 
+    font-size: 1.5em;
+    position: relative; 
+    right: 30px; 
+    transition: transform 0.3s ease, content 0.3s ease;
+}
+
+.acordeon .contentBx.active .Label::before {
+    content: '▼'; 
+    transform: rotate(0deg); 
+}
+
+.acordeon .contentBx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
+.acordeon .contentBx .content {
+    background: #7445c0;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    padding: 0 5px; 
+}
+
+.acordeon .contentBx.active .content {
+    height: auto; 
+    padding: 10px; 
+}
+
+
+/*dentro del acordeon*/
+
+h3{
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: auto;
+}
+strong{
+    font-size: 25px;
+    color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+.text-img {
+    display: flex;
+    gap: 100px; /* Espacio entre el texto y la imagen */
+    align-items: flex-start;
+    color: white;    
+}
+
+.text-img img {
+    color: white;
+    width: 250px; 
+    height: 180px; 
+    border-radius: 8px; 
+    margin-left: 5px; 
+    border: 5px solid white; 
+}
+
+.text-content {
+    max-width: 60%;
+}
+
+.image-content {
+    display: flex;
+    flex-direction: column; /* Apilar imágenes verticalmente */
+    gap: 20px; /* Espacio entre imágenes */
+}
+
+.text-content p {
+    font-size: 1.1em; 
+    color: white; 
+    line-height: 1.6em; 
+    text-align: justify; 
+    margin: 0;
+}
+
+.lis-p {
+    margin: 10px 0 0 20px;
+    padding: 12x;
+}
+
+.lis-p li {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    list-style-type: disc;
+    text-align: justify;
+}
+
+.image-content img {
+    width: 250px; 
+    height: auto; 
+    border-radius: 8px; 
+    border: 5px solid black; 
+}
+P{
+    color: white;
+    text-align: justify;
+    padding: 25px;
+}
+
+/*boton de volver*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.button {
+    background-color: rgb(30, 5, 58); 
+    color: white; 
+    padding: 10px; 
+    font-size: 1.5em; 
+    font-weight: bold;
+    border: none;
+    border-radius: 8px; 
+    cursor: pointer;
+    text-decoration: none; 
+    text-align: center;
+    transition: background-color 0.3s ease; 
+}

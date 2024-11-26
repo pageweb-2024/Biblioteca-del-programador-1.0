@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sql.css">
+    <title>SQL</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-menu">
+            <a href="../index.html" class="logo"><img src="../images/Logo_3_Sin_Fondo.png" alt="" /></a>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Programación Web</a>
+                    <div class="dropdown">
+                        <a href="Seccion_2_Programacion-web.html" class="dropdown-item">Historia</a>
+                        <a href="html.html" class="dropdown-item">HTML</a>
+                        <a href="css.html" class="dropdown-item">CSS</a>
+                        <a href="python.html" class="dropdown-item">PYTHON</a>
+                        <a href="php.html" class="dropdown-item">PHP</a>
+                        <a href="Java.html" class="dropdown-item">JAVA</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Videojuegos</a>
+                    <div class="dropdown">
+                        <a href="Seccion_3_Prog_Videojuegos.html" class="dropdown-item">Historia</a>
+                        <a href="javascript.html" class="dropdown-item">JS</a>
+                        <a href="c++.html" class="dropdown-item">C++</a>
+                        <a href="csharp.html" class="dropdown-item">C#</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Prog. Para Bases de Datos</a>
+                    <div class="dropdown">
+                        <a href="Seccion_4_Prog_Bases_de_Datos.html" class="dropdown-item">Historia</a>
+                        <a href="sql.html" class="dropdown-item">SQL</a>
+                        <a href="nosql.html" class="dropdown-item">NoSQL</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <div class="sql-logo">
+        <img class="image-sql" src="../images/SQL_Blanco.png" alt="" />
+    </div>
+
+    <h1>SQL</h1>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">HISTORIA DEL LENGUAJE</div>
+            <div class="content">
+                <ul>
+                    <div class="text-img">
+                        <p>
+                            SQL (Structured Query Language) fue desarrollado en los años 1970 por IBM, basado en el
+                            modelo relacional propuesto por Edgar F. Codd. Inicialmente conocido como SEQUEL, fue
+                            diseñado para gestionar y manipular datos en bases de datos relacionales. En 1986, SQL se
+                            convirtió en un estándar ANSI y luego en ISO en 1987, lo que lo consolidó como el lenguaje
+                            dominante para bases de datos relacionales. A lo largo de las décadas, ha evolucionado con
+                            extensiones y variantes implementadas por diferentes sistemas de bases de datos como Oracle,
+                            MySQL y SQL Server.
+                        </p>
+                        <img src="../recursos/Sección_4_Prog_Bases_de_Datos/Images_historia/Edgar F. Codd.jpg"
+                            alt="Edgar F. Codd">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">PORQUE ES IMPORTANTE</div>
+            <div class="content">
+                <ul>
+                    <p>
+                        SQL (Structured Query Language) es fundamental en la gestión de bases de datos porque es el
+                        estándar universal para interactuar con sistemas de gestión de bases de datos relacionales
+                        (SGBD). Su importancia radica en varios aspectos clave:
+                    </p>
+                </ul>
+                <ul>
+                    <strong>Lenguaje universal para bases de datos relacionales</strong>
+                    <div class="text-img">
+                        <p>
+                            SQL es el lenguaje estándar para gestionar bases de datos relacionales, utilizado en
+                            sistemas como MySQL, PostgreSQL y Oracle. Su universalidad facilita la portabilidad de
+                            conocimientos entre diferentes plataformas, permitiendo crear, consultar y manipular datos
+                            de manera consistente y eficiente en cualquier entorno de bases de datos.
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Lenguaje Universal Bases de Datos Relacionales.jpg"
+                            alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Manipulación eficiente de datos</strong>
+                    <div class="text-img">
+                        <p>
+                            La manipulación eficiente de datos en SQL se basa en las operaciones CRUD: crear, leer,
+                            actualizar y eliminar registros. SQL permite gestionar grandes volúmenes de información con
+                            comandos como INSERT, SELECT, UPDATE y DELETE. Además, facilita la consulta de datos
+                            complejos mediante filtros (WHERE), agrupaciones (GROUP BY), ordenamiento (ORDER BY) y
+                            combinaciones de tablas (joins), optimizando el acceso y la gestión de datos en cualquier
+                            sistema relacional.
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Manipulación Eficiente de Datos.jpg" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Consulta de datos complejos</strong>
+                    <div class="text-img">
+                        <p>
+                            La consulta de datos complejos en SQL permite extraer información específica mediante
+                            filtros (WHERE), agrupaciones (GROUP BY), ordenamiento (ORDER BY) y funciones de
+                            agregación (SUM(), COUNT()). Además, las consultas combinadas con joins relacionan
+                            datos de múltiples tablas, facilitando el análisis detallado y la generación de informes
+                            precisos a partir de grandes volúmenes de información.
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Consulta de Datos Complejos.JPG" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Integridad y seguridad</strong>
+                    <div class="text-img">
+                        <p>
+                            La integridad y seguridad en SQL garantizan la confiabilidad y protección de los datos. Se
+                            logran mediante **restricciones** como claves primarias y foráneas para asegurar la
+                            consistencia, y mediante transacciones ACID para operaciones seguras. Además, SQL
+                            permite controlar el acceso a los datos con permisos específicos (GRANT y REVOKE),
+                            protegiendo la información contra accesos no autorizados.
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Integridad y Seguridad.jfif" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Flexibilidad y escalabilidad</strong>
+                    <div class="text-img">
+                        <p>
+                            SQL ofrece flexibilidad y escalabilidad al manejar grandes volúmenes de datos y adaptarse a
+                            diferentes necesidades, desde pequeñas aplicaciones hasta sistemas empresariales complejos.
+                            Su capacidad para optimizar consultas, gestionar múltiples usuarios y mantener la integridad
+                            de datos permite crecer con las demandas del negocio, garantizando un rendimiento eficiente
+                            y consistente a medida que aumenta la cantidad de datos o la complejidad de las operaciones.
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Flexibilidad y Escalabilidad.jpeg" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="acordeon">
+        <div class="contentBx">
+            <div class="Label">CONCEPTOS BASICOS DEL LENGUAJE</div>
+            <div class="content">
+                <ul>
+                    <strong>Base de Datos Relacional</strong>
+                    <div class="text-img">
+                        <p>
+                            Una base de datos relacional es un tipo de base de datos que organiza los datos en tablas
+                            (también llamadas relaciones), donde cada tabla representa una entidad con filas (registros)
+                            y columnas (campos). Las tablas están conectadas entre sí mediante relaciones, que se
+                            establecen a través de claves primarias y claves foráneas.
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/bases-de-datos-relacionales.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Lenguaje SQL</strong>
+                    <p>
+                        SQL (Structured Query Language) es el lenguaje estándar para gestionar bases de datos
+                        relacionales. Se divide en varias categorías:
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                DDL (Data Definition Language): es un subconjunto de SQL que se utiliza para definir y
+                                gestionar la estructura de una base de datos. Incluyendo comandos que permiten crear,
+                                modificar o eliminar tablas, esquemas e índices.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplos: CREATE, ALTER, DROP.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                DML (Data Manipulation Language): Manipula los datos almacenados.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplos: INSERT, SELECT, UPDATE, DELETE.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                DCL (Data Control Language): Controla los permisos y accesos.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplos: GRANT, REVOKE.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                TCL (Transaction Control Language): Gestiona transacciones.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplos: COMMIT, ROLLBACK.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/SQL-lenguaje-de-programacion-logo.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Tablas</strong>
+                    <p>
+                        Las tablas son la estructura fundamental de una base de datos relacional. Almacenan los datos
+                        organizados en filas y columnas,<br> donde cada fila representa un registro único, y cada
+                        columna,
+                        un campo con un tipo de dato específico.
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Columnas (Campos): Definen la estructura de la tabla, cada columna tiene un nombre y un
+                                tipo de dato (texto, numérico, fecha, etc.).<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: nombre VARCHAR(50), edad INT.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Filas (Registros): Representan instancias de datos almacenados, cada fila contiene
+                                valores para cada columna.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: (Ana, 25), (Luis, 30).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Clave Primaria (Primary Key): Columna o combinación de columnas que identifica de forma
+                                única cada registro. Evita duplicados y garantiza la integridad de los datos.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: id INT PRIMARY KEY.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Clave Foránea (Foreign Key): Crea relaciones entre tablas al referenciar una clave
+                                primaria de otra tabla. Mantiene la integridad referencial entre datos relacionados.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: id_usuario INT REFERENCES usuarios(id).</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Índices: Mejoran la velocidad de búsqueda y recuperación de datos, se aplican a una o
+                                varias columnas.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplo: CREATE INDEX idx_nombre ON usuarios(nombre);.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Restricciones: Reglas aplicadas a las columnas para garantizar la validez de los
+                                datos.<br>
+                                <br>
+                                <ul>
+                                    <li>Ejemplos: NOT NULL, UNIQUE, CHECK.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Tablas.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Claves</strong>
+                    <p>
+                        En SQL, las claves son elementos esenciales para garantizar la integridad y la relación de
+                        los datos en una base de datos relacional.<br> Las principales claves son:
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Clave Primaria (PRIMARY KEY)<br>
+                                <br>
+                                <ul>
+                                    <li>Identifica de manera única cada registro en una tabla.</li>
+                                    <li>No puede contener valores nulos ni duplicados.</li>
+                                    <li>Cada tabla puede tener solo una clave primaria.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Clave Foránea (FOREIGN KEY)<br>
+                                <br>
+                                <ul>
+                                    <li>Crea una relación entre dos tablas, vinculando una columna en la tabla
+                                        secundaria con la clave primaria de la tabla principal.</li>
+                                    <li>Garantiza la integridad referencial, evitando la creación de registros
+                                        huérfanos.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Clave Única (UNIQUE)<br>
+                                <br>
+                                <ul>
+                                    <li>Garantiza que los valores de una columna sean únicos, pero permite valores
+                                        nulos.</li>
+                                    <li>Se puede aplicar a múltiples columnas.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Clave Compuesta (Compound Key)<br>
+                                <br>
+                                <ul>
+                                    <li>Combina dos o más columnas para formar una clave primaria o única.</li>
+                                    <li>Útil cuando una sola columna no puede identificar de manera única un registro.
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                Importancia de las Claves<br>
+                                <br>
+                                <ul>
+                                    <li>Integridad de los datos: Evitan duplicados y garantizan la precisión de la
+                                        información.</li>
+                                    <li>Relaciones entre tablas: Permiten establecer conexiones lógicas entre diferentes
+                                        conjuntos de datos.</li>
+                                    <li>Optimización de consultas: Facilitan búsquedas rápidas mediante índices
+                                        automáticos creados con claves primarias.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Claves.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Consultas</strong>
+                    <div class="text-img">
+                        <p>
+                            Las consultas en SQL son utilizadas para recuperar datos de una base de datos. El comando
+                            principal es SELECT, que permite especificar qué columnas y registros se desean obtener. Las
+                            consultas pueden incluir filtros (WHERE), ordenamiento (ORDER BY), agrupación (GROUP BY) y
+                            funciones agregadas (como COUNT(), SUM()).
+                        </p>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Consultas.png" alt="">
+                    </div>
+                </ul>
+                <ul>
+                    <strong>Relaciones entre Tablas</strong>
+                    <p>
+                        Las relaciones entre tablas en bases de datos se crean para vincular datos de diferentes tablas
+                        utilizando claves. La clave foránea<br> en una tabla hace referencia a la clave primaria en
+                        otra,
+                        estableciendo una conexión entre ellas. Las relaciones más comunes son:
+                    </p>
+                    <div class="text-img">
+                        <ul class="lis-p">
+                            <li>
+                                Uno a uno (1:1): Un registro en una tabla se relaciona con un solo registro en otra.
+                                <br>
+                            </li>
+                            <li>
+                                Uno a muchos (1:N): Un registro en una tabla puede tener varios registros relacionados
+                                en otra.
+                            </li>
+                            <li>
+                                Muchos a muchos (N:M): Variados registros en ambas tablas se relacionan entre sí,
+                                generalmente mediante una tabla intermedia.
+                            </li>
+                        </ul>
+                        <img src="../recursos/Sección_14_SQL/Images SQL/Relaciones entre Tablas.png" alt="">
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class=" acordeon">
+            <div class="contentBx">
+                <div class="Label">HERRAMIENTAS CON LAS QUE SE USA</div>
+                <div class="content">
+                    <ul>
+                        <p>
+                            Existen varias herramientas y sistemas de gestión de bases de datos (SGBD) que se utilizan
+                            para trabajar con SQL. Estas <br> herramientas ayudan a crear, administrar, consultar y
+                            manipular bases de datos. Algunas de las más comunes incluyen:
+                        </p>
+                        <div class="text-img">
+                            <ul class="lis-p">
+                                <li>
+                                    Sistemas de Gestión de Bases de Datos (SGBD): Son plataformas donde se almacenan y
+                                    gestionan bases de datos, y <br>donde se ejecutan consultas SQL.<br>
+                                    <br>
+                                    <ul>
+                                        <li>MySQL: Un SGBD de código abierto muy popular para aplicaciones web.</li>
+                                        <li>PostgreSQL: SGBD de código abierto conocido por su robustez y soporte de SQL
+                                            avanzado.</li>
+                                        <li>Microsoft SQL Server: SGBD de Microsoft con soporte completo de SQL y
+                                            características avanzadas.</li>
+                                        <li>Oracle Database: SGBD empresarial, muy utilizado en grandes corporaciones,
+                                            con extensas características SQL.</li>
+                                        <li>SQLite: SGBD ligero y autónomo, ideal para aplicaciones móviles o de
+                                            escritorio.</li>
+                                        <li>MariaDB: SGBD de código abierto, compatible con MySQL y de alto rendimiento.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="../recursos/Sección_14_SQL/Images SQL/Sistemas de Gestión de Bases de Datos (SGBD).jpg"
+                                alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <div class="text-img">
+                            <ul class="lis-p">
+                                <li>
+                                    Herramientas de Interfaz Gráfica (GUI): Estas herramientas proporcionan interfaces
+                                    visuales que facilitan la gestión y <br>consulta de bases de datos sin necesidad de
+                                    escribir comandos SQL en la terminal.<br>
+                                    <br>
+                                    <ul>
+                                        <li>phpMyAdmin: Herramienta web para gestionar bases de datos MySQL y MariaDB.
+                                        </li>
+                                        <li>DBeaver: Herramienta universal que soporta múltiples bases de datos,
+                                            incluidas MySQL, PostgreSQL, SQL Server, <br>Oracle y otras.
+                                        </li>
+                                        <li>HeidiSQL: Herramienta sencilla para gestionar MySQL, MariaDB y PostgreSQL.
+                                        </li>
+                                        <li>SQL Server Management Studio (SSMS): Herramienta de Microsoft para gestionar
+                                            SQL Server.</li>
+                                        <li>pgAdmin: Herramienta para la gestión de bases de datos PostgreSQL.</li>
+                                        <li>Toad for Oracle: Herramienta avanzada para Oracle Database, con
+                                            características específicas para desarrolladores <br>y administradores.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="../recursos/Sección_14_SQL/Images SQL/Herramientas de Interfaz Gráfica (GUI).jpg"
+                                alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <div class="contentBx">
+                <div class="Label">LENGUAJES Y TECNOLOGIAS QUE COMPLEMENTAN EL LENGUAJE</div>
+                <div class="content">
+                    <ul>
+                        <strong>Python</strong>
+                        <div class="text-img">
+                            <p>
+                                Python se utiliza en SQL principalmente para interactuar con bases de datos relacionales
+                                mediante bibliotecas como SQLite, MySQL Connector, Psycopg2 (para PostgreSQL) y
+                                SQLAlchemy (ORM). Estas herramientas permiten conectar a la base de datos, ejecutar
+                                consultas SQL y procesar resultados manipulando y analizando los datos recuperados.<br>
+                                Esto facilita la automatización de tareas, análisis de datos y creación de aplicaciones
+                                que requieren acceso a bases de datos.
+                            </p>
+                            <img src="../recursos/Sección_14_SQL/Images SQL/Python.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>Java</strong>
+                        <div class="text-img">
+                            <p>
+                                Java se usa con SQL para interactuar con bases de datos mediante JDBC (Java Database
+                                Connectivity), una API que permite conectar aplicaciones Java a bases de datos
+                                relacionales. Los pasos básicos son: Cargar el controlador JDBC, establecer la conexión,
+                                crear y ejecutar consultas, procesar los resultados y cerrar la conexión. <br>Esto
+                                permite a las aplicaciones Java manipular bases de datos SQL, realizar operaciones CRUD
+                                y gestionar transacciones.
+                            </p>
+                            <img src="../recursos/Sección_14_SQL/Images SQL/Java-Logo.jpg" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>PHP</strong>
+                        <div class="text-img">
+                            <p>
+                                PHP se usa con SQL para crear aplicaciones web dinámicas que interactúan con bases de
+                                datos. PHP permite conectar, consultar y manipular datos en bases de datos relacionales
+                                como MySQL o PostgreSQL. En el uso básico se establece una conexión a la base de datos
+                                con funciones como mysqli_connect() o PDO luego se envían comandos SQL usando
+                                mysqli_query() o prepare() (para consultas seguras), los datos obtenidos se manipulan y
+                                muestran en la página web y finalmente se finaliza la conexión con mysqli_close().<br>
+                                PHP facilita la creación de aplicaciones que leen y escriben datos, como sistemas de
+                                gestión de usuarios o tiendas en línea.
+                            </p>
+                            <img src="../recursos/Sección_14_SQL/Images SQL/PHP.png" alt="">
+                        </div>
+                    </ul>
+                    <ul>
+                        <strong>Node.js</strong>
+                        <div class="text-img">
+                            <p>
+                                Node.js se utiliza con SQL para interactuar con bases de datos relacionales, permitiendo
+                                construir aplicaciones web dinámicas. Se conecta a la base de datos mediante bibliotecas
+                                como mysql2, pg (para PostgreSQL) o sequelize (ORM). Para el uso de Node.js en bases de
+                                datos relacionales primero se deberá instalar el conector, luego conectar a la base de
+                                datos y finalmente se podrán ejecutar consultas SQL.<br>
+                                Node.js facilita la ejecución asíncrona de consultas, lo que mejora el rendimiento y la
+                                escalabilidad en aplicaciones web.
+                            </p>
+                            <img src="../recursos/Sección_14_SQL/Images SQL/Node js.png" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="acordeon">
+            <div class="contentBx">
+                <div class="Label">RESUMEN</div>
+                <div class="content">
+                    <p>
+                        En Resumen SQL es un lenguaje esencial en la gestión de bases de datos relacionales, utilizado
+                        para crear, manipular y consultar datos. Nació en los años 1970 y ha sido el estándar en la
+                        industria desde entonces, adoptado por múltiples sistemas de bases de datos como MySQL,
+                        PostgreSQL, Oracle y SQL Server. Su estructura se basa en el manejo de datos a través de
+                        comandos bien definidos como SELECT, INSERT y UPDATE. Además, SQL se integra fácilmente con
+                        lenguajes de programación y frameworks modernos, y es compatible con herramientas de análisis y
+                        visualización de datos, haciendo que sea una piedra angular en el desarrollo de aplicaciones y
+                        la gestión de datos en el mundo digital.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <a href="../index.html" class="button">VOLVER</a>
+        </div>
+
+        <script src="../java/sql.js"></script>
+</body>
+
+</html>
